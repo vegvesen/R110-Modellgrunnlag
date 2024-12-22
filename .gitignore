@@ -1,0 +1,4 @@
+# ignore folder C:\DATA\R110-Git\Admin
+# C:/DATA/R110-Git/Admin
+*.dwg
+*.xlsx
