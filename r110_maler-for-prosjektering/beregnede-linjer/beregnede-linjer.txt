@@ -1,0 +1,8 @@
+Objektnavn	Linjenummer	Vegtype
+beregnet-linje	10000-19900	Primærveg
+beregnet-linje	200000-3990	Sekundærveg
+beregnet-linje	40000-59900	Kryssområder
+beregnet-linje	60000-69900	Andre underordnede veger
+beregnet-linje	70000-79900	Gang- og sykkelveger
+beregnet-linje	80000-89900	Sideanlegg
+beregnet-linje	90000-99900	Annet
