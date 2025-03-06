@@ -1,0 +1,1435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-03-06 tor. 15:11 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Veileder R110 Modellgrunnlag</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Veileder R110 Modellgrunnlag</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgac17351">1 Felles krav til alle dokumentasjonstyper (Arbeidsmetoder)</a>
+<ul>
+<li><a href="#orge73e3b8">1.1 Krav til dokumentasjon i vegprosjekter</a>
+<ul>
+<li><a href="#org2061b96">1.1.1 Dokumentasjonstyper</a></li>
+<li><a href="#org8f90b99">1.1.2 Stedfestet informason</a></li>
+<li><a href="#orgf2bbc33">1.1.3 Komponenter i modeller</a></li>
+<li><a href="#orge70d398">1.1.4 Informasjonsmodeller</a></li>
+</ul>
+</li>
+<li><a href="#org19c6021">1.2 Formål med dokumentasjonen (ikke påbegynt)</a></li>
+<li><a href="#org54d5b2e">1.3 Regelverk med krav til dokumentasjon (ikke påbegynt)</a></li>
+<li><a href="#org1f7d21b">1.4 Ansvar for dokumentasjon</a>
+<ul>
+<li><a href="#org8ec847c">1.1.1 Ansvar for oppgaver forbundet med produksjon av dokumentasjon</a></li>
+<li><a href="#org8211550">1.1.2 Bestilling av dokumentasjon</a></li>
+</ul>
+</li>
+<li><a href="#org46cb901">1.5 Prosjektområdet (ikke påbegynt)</a></li>
+<li><a href="#org9be035f">1.6 Koordinatsystem</a></li>
+<li><a href="#org233fed1">1.7 Dokumentasjonens kvalitet (ikke påbegynt)</a></li>
+<li><a href="#orgc9f65f2">1.8 Dataformat</a>
+<ul>
+<li><a href="#org0052063">Datafiler</a></li>
+<li><a href="#org99a0439">Metadata</a></li>
+<li><a href="#org5dfef9f">Databaser</a></li>
+</ul>
+</li>
+<li><a href="#org982c024">1.9 Navnsetting i datafiler og databaser (4.2 Navngiving)</a></li>
+<li><a href="#orgf7da55b">1.10 Dokumentasjon fra gjennomførte prosjektfaser (ikke påbegynt)</a></li>
+</ul>
+</li>
+<li><a href="#org587a33a">2 Grunnlagsdata (2.6)</a>
+<ul>
+<li><a href="#org510de92">2.1 Felles krav til grunnlagsdata</a></li>
+<li><a href="#org04c1480">2.2 Grunnlagsdata fra Norge Digitalt</a></li>
+<li><a href="#org95b08d3">2.3 Grunnlagsdata fra Statens vegvesen</a></li>
+<li><a href="#orgc621c2f">2.4 Grunnlagsdata fra øvrige dataeiere</a></li>
+<li><a href="#org83ddeff">2.5 Grunlagsdata i papirarkiver</a></li>
+<li><a href="#org359c397">2.6 Grunnlagsdta registrert av vegprosjekter</a></li>
+</ul>
+</li>
+<li><a href="#orgb3a0cbb">3 Registrering av data (ikke påbegynt)</a>
+<ul>
+<li><a href="#orgfbe9104">3.1 Felles krav til registrering</a>
+<ul>
+<li><a href="#org606d9d7">3.1.1 Definisjon</a></li>
+<li><a href="#orgd145416">3.1.2 Formål med registrering av data</a></li>
+<li><a href="#org65c67c9">3.1.3 Regelverk</a></li>
+<li><a href="#org26796f4">3.1.4 Kvalitet</a></li>
+<li><a href="#org92408e9">3.1.5 Innhold</a></li>
+<li><a href="#org652c79a">3.1.6 Dataformat</a></li>
+</ul>
+</li>
+<li><a href="#org6536232">3.2 Landmåling</a>
+<ul>
+<li><a href="#orgd387926">3.2.1 Definisjon</a></li>
+<li><a href="#orge62d94a">3.2.2 Formål</a></li>
+<li><a href="#orgbd326fe">3.2.3 Registreringsmetodikk</a></li>
+<li><a href="#org87c664f">3.2.4 Kvalitet</a></li>
+<li><a href="#org8084195">3.2.5 Dataformat</a></li>
+<li><a href="#org71c1969">3.2.6 Levering</a></li>
+</ul>
+</li>
+<li><a href="#orgc8d0485">3.3 Skanning</a>
+<ul>
+<li><a href="#orgb4c6f97">3.3.1 Definisjon</a></li>
+<li><a href="#org2c36023">3.3.2 Formål</a></li>
+<li><a href="#org6a19f6e">3.3.3 Registreringsmetodikk</a></li>
+<li><a href="#org4a0ab71">3.3.4 Klassifisering av punkt i punktsky</a></li>
+<li><a href="#orgeb826d2">3.3.5 Kvalitet</a></li>
+<li><a href="#orge25e2bc">3.3.6 Dataformat</a></li>
+<li><a href="#org296e26c">3.3.7 Levering</a></li>
+</ul>
+</li>
+<li><a href="#org7cefbb2">3.4 Geologisk kartlegging</a>
+<ul>
+<li><a href="#orgfe18c24">3.4.1 Definisjon</a></li>
+<li><a href="#org5af2f5a">3.4.2 Formål</a></li>
+<li><a href="#org8e47e96">3.4.3 Kvalitet</a></li>
+<li><a href="#org66723d0">3.4.4 Registreringsmetodikk</a></li>
+</ul>
+</li>
+<li><a href="#org4c7f6a1">3.5 Målinger</a>
+<ul>
+<li><a href="#orge54b29c">3.5.1 Definisjon</a></li>
+<li><a href="#orgdec6624">3.5.2 Formål</a></li>
+<li><a href="#org4395242">3.5.3 Registreringsmetodikk</a></li>
+</ul>
+</li>
+<li><a href="#org145558b">3.6 Inspeksjon</a>
+<ul>
+<li><a href="#org2bab798">3.6.1 Definisjon</a></li>
+<li><a href="#org14b95eb">3.6.2 Formål</a></li>
+<li><a href="#org2dd3941">3.6.3 Krav til innhold</a></li>
+</ul>
+</li>
+<li><a href="#orgd74e26b">3.7 Befaring</a>
+<ul>
+<li><a href="#org9ee4e8e">3.7.1 Definisjon</a></li>
+<li><a href="#org95943dc">3.7.2 Formål</a></li>
+<li><a href="#org169d4e8">3.7.3 Registreringsmetodikk</a></li>
+</ul>
+</li>
+<li><a href="#org6c319f9">3.8 Registrering på anlegg</a>
+<ul>
+<li><a href="#orgf10255e">3.8.1 Definisjon</a></li>
+<li><a href="#org708d569">3.8.2 Formål</a></li>
+<li><a href="#orgbd3a80a">3.8.3 Kvalitet</a></li>
+<li><a href="#org87c9dc3">3.8.4 Innhold</a></li>
+<li><a href="#org5fa2ba7">3.8.6 Dataformat</a></li>
+<li><a href="#orgaa7f43b">3.8.7 Levering</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org7557f6a">4 Modeller</a>
+<ul>
+<li><a href="#org78cad19">4.1 Felles krav til modeller</a>
+<ul>
+<li><a href="#org1a00621">4.1.1 Definisjon</a></li>
+<li><a href="#org56d7dc5">4.1.2 Formål</a></li>
+<li><a href="#org4d8bdcb">4.1.3 Regelverk</a></li>
+<li><a href="#org5c8dd9d">4.1.4 Koordinatsystem</a></li>
+<li><a href="#orgd98ef0f">4.1.5 Kvalitet</a></li>
+<li><a href="#orgb92b3c4">4.1.6 Innhold</a></li>
+<li><a href="#org37480a6">4.1.7 Prosjekteringsregler</a></li>
+<li><a href="#org0bd4c40">Praktisk bruk av modeller</a></li>
+<li><a href="#orgd0e6b9c">Deling av modeller</a></li>
+<li><a href="#org62868a9">Presentasjonsteknikk</a></li>
+</ul>
+</li>
+<li><a href="#org134c97b">4.2 Grunnlagsmodeller (ikke påbegynt)</a>
+<ul>
+<li><a href="#org1cbc0c4">4.2.1 Felles krav til grunnlagsmodeller</a></li>
+<li><a href="#org55f5986">4.2.2 Arealplansituasjon</a></li>
+<li><a href="#orga2f197b">4.2.3 Befolkning</a></li>
+<li><a href="#org0ac535b">4.2.4 Bildedata</a></li>
+<li><a href="#orgd052952">4.2.5 Bygg</a></li>
+<li><a href="#orgfa7c65c">4.2.6 Eiendom</a></li>
+<li><a href="#orga4378c6">4.2.7 Forurensning</a></li>
+<li><a href="#org022b224">4.2.8 Friluftsliv</a></li>
+<li><a href="#org5081f39">4.2.9 Grunnforhold</a></li>
+<li><a href="#orgf77f4b9">4.2.10 Kulturarv</a></li>
+<li><a href="#org00e8108">4.2.11 Landskap</a></li>
+<li><a href="#org11453c4">4.2.12 Naturmangfold</a></li>
+<li><a href="#org20ae63e">4.2.13 Naturressurser</a></li>
+<li><a href="#org037d28c">4.2.14 Næring</a></li>
+<li><a href="#org244f440">4.2.15 Samfunnssikkerhet</a></li>
+<li><a href="#orgcdf8d41">4.2.16 Samferdsel</a></li>
+<li><a href="#orga339bcf">4.2.17 Terrengmodell</a></li>
+<li><a href="#org42797bc">4.2.18 Teknisk infrastruktur</a></li>
+<li><a href="#org3de7299">4.2.19 Vann</a></li>
+<li><a href="#orgd066427">4.2.20 Vær og klima</a></li>
+</ul>
+</li>
+<li><a href="#orgf4c28f4">4.3 Fagmodeller (ikke påbegynt)</a>
+<ul>
+<li><a href="#orgbb4e421">4.3.1 Felles krav til fagmodeller</a></li>
+<li><a href="#org9e4a770">4.3.2 Arealplan</a></li>
+<li><a href="#orga5cb444">4.3.3 Belysning</a></li>
+<li><a href="#orgf387720">4.3.4 Bru</a></li>
+<li><a href="#orgbd2196a">4.3.5 Bygninger</a></li>
+<li><a href="#org483e885">4.3.6 Elektro</a></li>
+<li><a href="#org61d5de4">4.3.7 Ferjekai</a></li>
+<li><a href="#org5d48a0e">4.3.8 Gatemøbler</a></li>
+<li><a href="#orgb282258">4.3.9 Geologi</a></li>
+<li><a href="#org5f6738d">4.3.10 Geoteknikk</a></li>
+<li><a href="#org9652ff6">4.3.11 Grunnerverv</a></li>
+<li><a href="#org657db4c">4.3.12 Konstruksjoner</a></li>
+<li><a href="#orge366026">4.3.13 Kulturminnevern</a></li>
+<li><a href="#org6a5fb28">4.3.14 Massehåndtering</a></li>
+<li><a href="#org66b0cd6">4.3.15 Naturvern</a></li>
+<li><a href="#orgba9d48c">4.3.16 Overvann</a></li>
+<li><a href="#orgdbcee39">4.3.17 Rekkverk</a></li>
+<li><a href="#org3b865ab">4.3.18 Risikoreduksjon</a></li>
+<li><a href="#orge53e351">4.3.19 Signal</a></li>
+<li><a href="#orga7873b0">4.3.20 Skilt</a></li>
+<li><a href="#orgdb19e71">4.3.21 Steinsetting</a></li>
+<li><a href="#org8c94d1f">4.3.22 Terrengforming</a></li>
+<li><a href="#org79f96a0">4.3.23 Tunnel</a></li>
+<li><a href="#org99b7aaf">4.3.24 Vann og avløp</a></li>
+<li><a href="#orgc27d5b4">4.3.25 Veg</a></li>
+<li><a href="#org3255d86">4.3.26 Vegetasjon</a></li>
+<li><a href="#org2d1a7a1">4.3.27 Vegoppmerking</a></li>
+</ul>
+</li>
+<li><a href="#orgeecc28b">4.4 Situasjonsmodell (ikke påbegynt)</a>
+<ul>
+<li><a href="#org35126e2">4.4.1 Definisjon</a></li>
+<li><a href="#orgc2abc74">4.4.2 Formål</a></li>
+<li><a href="#orgb297a0a">4.4.3 Kvalitet</a></li>
+<li><a href="#org99907cd">4.4.4 Innhold</a></li>
+<li><a href="#orgb1cda81">4.4.5 Prosjekteringsregler</a></li>
+</ul>
+</li>
+<li><a href="#org647262e">4.5 Tverrfaglig (ikke påbegynt)</a>
+<ul>
+<li><a href="#org781d062">4.5.1 Definisjon</a></li>
+<li><a href="#org4dbf118">4.5.2 Formål</a></li>
+<li><a href="#org88b4f94">4.5.3 Kvalitet</a></li>
+<li><a href="#org58d9d90">4.5.4 Innhold</a></li>
+<li><a href="#org08a4bc3">4.5.5 Prosjekteringsregler</a></li>
+</ul>
+</li>
+<li><a href="#orgb16ba3e">4.6 Samordningsmodell (ikke påbegynt)</a>
+<ul>
+<li><a href="#orgf0a7c7f">4.6.1 Definisjon</a></li>
+<li><a href="#org57304ad">4.6.2 Formål</a></li>
+<li><a href="#org63a2297">4.6.3 Kvalitet</a></li>
+<li><a href="#org5a32d05">4.6.4 Prosjekteringsregler</a></li>
+<li><a href="#org7d479a8">4.6.5 Innhold</a></li>
+<li><a href="#org9a8b6e9">4.6.6 Tverrfaglige analyser</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org928e191">5 Resultatdata (5.4.2)</a>
+<ul>
+<li><a href="#org9077431">5.1 Felles krav til resultatdata</a>
+<ul>
+<li><a href="#org633112b">5.1.1 Definisjon</a></li>
+<li><a href="#org4dfe10e">5.1.2 Formål</a></li>
+<li><a href="#org61ce3ae">5.1.3 Regelverk</a></li>
+<li><a href="#org3ce72ff">5.1.4 Dekningsgrad</a></li>
+<li><a href="#org4a07387">5.1.5 Kvalitet</a></li>
+<li><a href="#orga29fe48">5.1.6 Innhold</a></li>
+</ul>
+</li>
+<li><a href="#org6c89574">5.2 Presentasjoner</a>
+<ul>
+<li><a href="#org53bdc24">5.2.1 Felles krav til presentasjoner</a></li>
+<li><a href="#org1054b75">5.2.2 Presentasjonsmodell</a></li>
+<li><a href="#org5540806">5.2.3 Animasjonsfilm</a></li>
+<li><a href="#org09887fd">5.2.4 Manipulerte bilder</a></li>
+<li><a href="#org2310c69">5.2.5 Foto og video</a></li>
+<li><a href="#orgf17f0d6">5.2.6 Prosjektpresentasjoner</a></li>
+</ul>
+</li>
+<li><a href="#orgc7bbc39">5.3 Datasett</a>
+<ul>
+<li><a href="#org1fd5cf6">5.3.1 Felles krav til datasett</a></li>
+<li><a href="#org23f6716">5.3.2 Stikningsdata</a></li>
+<li><a href="#orgf470fca">5.3.3 Maskinstyringsdata</a></li>
+<li><a href="#org5c240fa">5.3.4 NVDB- og FKB-grunnlag</a></li>
+</ul>
+</li>
+<li><a href="#org7e8e946">5.4 Dokumenter</a>
+<ul>
+<li><a href="#org0d70252">5.4.1 Felles krav til dokumenter</a></li>
+<li><a href="#orgcd9a00c">5.4.2 Tegninger</a></li>
+<li><a href="#org9f12496">5.4.3 Rapporter</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org3c47664">6 Lagyring og arkivering av dokumentasjon (ikke påbegynt)</a>
+<ul>
+<li><a href="#org154c955">6.1 Lagring av dokumentasjon</a></li>
+<li><a href="#org30461f0">6.2 Arkivering av dokumentasjon</a></li>
+</ul>
+</li>
+<li><a href="#orgfa89f87">7 Programvare (ikke påbegynt)</a></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgac17351" class="outline-2">
+<h2 id="orgac17351">1 Felles krav til alle dokumentasjonstyper (Arbeidsmetoder)</h2>
+<div class="outline-text-2" id="text-orgac17351">
+</div>
+<div id="outline-container-orge73e3b8" class="outline-3">
+<h3 id="orge73e3b8">1.1 Krav til dokumentasjon i vegprosjekter</h3>
+<div class="outline-text-3" id="text-orge73e3b8">
+</div>
+<div id="outline-container-org2061b96" class="outline-4">
+<h4 id="org2061b96">1.1.1 Dokumentasjonstyper</h4>
+<div class="outline-text-4" id="text-org2061b96">
+<ul class="org-ul">
+<li>R110 Modellgrunnlag, kapittel 1 definerer dokumentasjonstyper som brukes i vegprosjekter.</li>
+<li>Hvilke dokumentasjonstyper som skal inngå i et vegprosjekt, avklares i konkurransegrunnlag/prosjektbestilling.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8f90b99" class="outline-4">
+<h4 id="org8f90b99">1.1.2 Stedfestet informason</h4>
+</div>
+<div id="outline-container-orgf2bbc33" class="outline-4">
+<h4 id="orgf2bbc33">1.1.3 Komponenter i modeller</h4>
+<div class="outline-text-4" id="text-orgf2bbc33">
+<p>
+Komponenter som inngår i stedfestet informasjon skal organiseres som beskrevet i R110 kapittel 1.1.3.
+For en del modelltyper er det utarbeidet <a href="https://github.com/vegvesen/R110-Modellgrunnlag/wiki/VU53-Modellbaserte-vegprosjekter#informasjonsmodellering">informasjonsmodeller</a>, se 1.1.4, som gir oversikt over objektnavn og egenskapsdata.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge70d398" class="outline-4">
+<h4 id="orge70d398">1.1.4 Informasjonsmodeller</h4>
+<div class="outline-text-4" id="text-orge70d398">
+<p>
+For en del modelltyper er det utarbeidet <a href="https://github.com/vegvesen/R110-Modellgrunnlag/wiki/VU53-Modellbaserte-vegprosjekter#informasjonsmodellering">informasjonsmodeller</a> som gir oversikt over objektnavn og egenskapsdata.
+Basert på informasjonsmodellene er det utarbeidet maler som kan forenkle organisering og navngiving ved prosjektering/registrering av data:
+</p>
+<ul class="org-ul">
+<li><a href="https://github.com/vegvesen/R110-Modellgrunnlag/wiki/R110-Modellgrunnlag-%E2%80%90-maler-og-vedlegg#objektkodeliste">Objektkodeliste</a></li>
+<li><a href="https://github.com/vegvesen/R110-Modellgrunnlag/wiki/Maler-og-vedlegg-til-R110-Modellgrunnlag#informasjonsmodeller">Maler for lagstruktur</a></li>
+</ul>
+
+<p>
+Prosjekteringsprogramvare har ulike funksjonalitet for å navngi og strukturere objekter i modeller.
+Noen programmer bruker lagnavn og har begrensede muligheter for å tilordne navn på objektsamlinger og objekttyper.
+Andre programmer tillater at bruker oppretter objekttyper og egenskapsdata.
+</p>
+
+<p>
+Målet er å utarbeide objektbiblioteker for objekttypene som kan brukes i prosjekteringen, samt å gjøre objektdefinisjonene fra informasjonsmodeller tilgjengelige i prosjekteringsprogramvare.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org19c6021" class="outline-3">
+<h3 id="org19c6021">1.2 Formål med dokumentasjonen (ikke påbegynt)</h3>
+</div>
+<div id="outline-container-org54d5b2e" class="outline-3">
+<h3 id="org54d5b2e">1.3 Regelverk med krav til dokumentasjon (ikke påbegynt)</h3>
+</div>
+<div id="outline-container-org1f7d21b" class="outline-3">
+<h3 id="org1f7d21b">1.4 Ansvar for dokumentasjon</h3>
+<div class="outline-text-3" id="text-org1f7d21b">
+</div>
+<div id="outline-container-org8ec847c" class="outline-4">
+<h4 id="org8ec847c">1.1.1 Ansvar for oppgaver forbundet med produksjon av dokumentasjon</h4>
+<div class="outline-text-4" id="text-org8ec847c">
+<p>
+Prosjektet skal vurdere hvilke fagdomener som ha ansvar for bestilling, prosjektering/produksjon, kontroll og godkjenning av de ulike dokumentasjonstypene.
+</p>
+<ul class="org-ul">
+<li><a href="https://github.com/vegvesen/R110-Modellgrunnlag/wiki/Maler-og-vedlegg-til-R110-Modellgrunnlag#fagdomener">Mal for fagdomener</a> kan brukes som utgangspunkt for å avklare ansvar.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8211550" class="outline-4">
+<h4 id="org8211550">1.1.2 Bestilling av dokumentasjon</h4>
+<div class="outline-text-4" id="text-org8211550">
+<p>
+Bestilling av dokumentasjon skjer med konkurransegrunnlag eller prosjektbestilling.
+</p>
+<ul class="org-ul">
+<li>Konkurransegrunnlag brukes når dokumentasjonen bestilles som del av anbudskonkurranse for planlegging-, prosjektering- eller entrepriseoppdrag.
+<ul class="org-ul">
+<li>Maler for konkurransegrunnlag benyttes til bestilling av dokumentasjon.
+<ul class="org-ul">
+<li>Kapittel C skal inneholde generelle bestemmelser om dokumentasjonen.</li>
+<li>Kapittel D skal inneholde lister over dokumentasjonstyper det går an å bestille.</li>
+</ul></li>
+<li>Ikke alle maler er tilpasset bestiling av dokumentasjon i henhold til R110 Modellgrunnlag.</li>
+<li>Oppdaterte tekster og tabeller kan hentes fra <a href="https://github.com/vegvesen/R110-Modellgrunnlag/wiki/R110-Modellgrunnlag-%E2%80%90-maler-og-vedlegg#mal-for-prosjektbestilling">mal for prosjektbestilling iht. R110 Modellgrunnlag</a>.</li>
+<li>Det enkelte prosjekt må vurdere hvilke dokumentasjonstyper som skal bestilles og tilpasse innhold/kvalitetskrav til oppgavene som skal utføres.</li>
+</ul></li>
+
+<li>"Prosjektbestilling" brukes når dokumentasjon bestilles levert av interne ressurser i vegvesenet.
+<ul class="org-ul">
+<li>Prosjektbestillingen iht. R110 Modellgrunnlag skal benytte de samme formuleringene som konkurransegrunnlag.</li>
+<li>Oppdaterte tekster og tabeller kan hentes fra <a href="https://github.com/vegvesen/R110-Modellgrunnlag/wiki/R110-Modellgrunnlag-%E2%80%90-maler-og-vedlegg#mal-for-prosjektbestilling">mal for prosjektbestilling iht. R110 Modellgrunnlag</a>.</li>
+<li>Det enkelte prosjekt må vurdere hvilke dokumentasjonstyper som skal bestilles og tilpasse innhold/kvalitetskrav til oppgavene som skal utføres.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org46cb901" class="outline-3">
+<h3 id="org46cb901">1.5 Prosjektområdet (ikke påbegynt)</h3>
+</div>
+<div id="outline-container-org9be035f" class="outline-3">
+<h3 id="org9be035f">1.6 Koordinatsystem</h3>
+<div class="outline-text-3" id="text-org9be035f">
+<p>
+Krav til koordinatsystem er gitt i R110 kapittel 1.6.
+</p>
+<ul class="org-ul">
+<li>Prosjektets koordinatystem skal spesifiseres i konkurransegrunnlag/prosjektbestilling.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org233fed1" class="outline-3">
+<h3 id="org233fed1">1.7 Dokumentasjonens kvalitet (ikke påbegynt)</h3>
+</div>
+<div id="outline-container-orgc9f65f2" class="outline-3">
+<h3 id="orgc9f65f2">1.8 Dataformat</h3>
+<div class="outline-text-3" id="text-orgc9f65f2">
+</div>
+<div id="outline-container-org0052063" class="outline-4">
+<h4 id="org0052063">Datafiler</h4>
+<div class="outline-text-4" id="text-org0052063">
+<p>
+Datafiler skal leveres på formater som beskrevet i R110 kapittel 1.8.1
+</p>
+<ul class="org-ul">
+<li>Det er viktig å bestille data på programvarens originalformat i tillegg til åpent format.</li>
+<li>Åpne formater mangler ofte informasjon som finnes i originalformatet, og det kan begrense gjenbruk av data.</li>
+<li>Hvilke formater som skal benyttes, avtales i prosjektet etter at prosjekteringsprogramvare er valgt.</li>
+<li><a href="https://github.com/vegvesen/R110-Modellgrunnlag/wiki/R110-Modellgrunnlag-%E2%80%90-veiledning#dataformater">Les om anbefaling av formater til ulike formål her</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org99a0439" class="outline-4">
+<h4 id="org99a0439">Metadata</h4>
+<div class="outline-text-4" id="text-org99a0439">
+<p>
+Metadata til datafiler skal leveres som beskrevet i R110 kapittel 1.8.2
+</p>
+<ul class="org-ul">
+<li>Metadata kan tilordnes mange filtyper ved å høyreklikke filen i filutforsker, velge egenskaper og finne menypunkt for editering av metadata.</li>
+<li>For filtyper/programvare som mangler funksjonalitet for tilordning av metadata, kan metadata leveres som tekstfil/beskrivelse vedlagt filen, eller som tekst i filen.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5dfef9f" class="outline-4">
+<h4 id="org5dfef9f">Databaser</h4>
+<div class="outline-text-4" id="text-org5dfef9f">
+<p>
+Databaser skal leveres organisert og på formater som beskrevet i R110 kapittel 1.8.3
+</p>
+<ul class="org-ul">
+<li>Hvis det benyttes programvare som lagrer data i databaser, skal databasene leveres som sluttdokumentasjon.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org982c024" class="outline-3">
+<h3 id="org982c024">1.9 Navnsetting i datafiler og databaser (4.2 Navngiving)</h3>
+<div class="outline-text-3" id="text-org982c024">
+<p>
+Dokumentasjonen skal organiseres og navngis i henhold til R110 Modellgrunnlag kapittel 1.1.1
+</p>
+<ul class="org-ul">
+<li>Datafiler og databaser skal navngis som beskrevet i R110 Modellgrunnlag kapittel 1.9</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf7da55b" class="outline-3">
+<h3 id="orgf7da55b">1.10 Dokumentasjon fra gjennomførte prosjektfaser (ikke påbegynt)</h3>
+</div>
+</div>
+
+
+<div id="outline-container-org587a33a" class="outline-2">
+<h2 id="org587a33a">2 Grunnlagsdata (2.6)</h2>
+<div class="outline-text-2" id="text-org587a33a">
+</div>
+<div id="outline-container-org510de92" class="outline-3">
+<h3 id="org510de92">2.1 Felles krav til grunnlagsdata</h3>
+</div>
+<div id="outline-container-org04c1480" class="outline-3">
+<h3 id="org04c1480">2.2 Grunnlagsdata fra Norge Digitalt</h3>
+</div>
+<div id="outline-container-org95b08d3" class="outline-3">
+<h3 id="org95b08d3">2.3 Grunnlagsdata fra Statens vegvesen</h3>
+</div>
+<div id="outline-container-orgc621c2f" class="outline-3">
+<h3 id="orgc621c2f">2.4 Grunnlagsdata fra øvrige dataeiere</h3>
+</div>
+<div id="outline-container-org83ddeff" class="outline-3">
+<h3 id="org83ddeff">2.5 Grunlagsdata i papirarkiver</h3>
+</div>
+<div id="outline-container-org359c397" class="outline-3">
+<h3 id="org359c397">2.6 Grunnlagsdta registrert av vegprosjekter</h3>
+<div class="outline-text-3" id="text-org359c397">
+<p>
+Ta med info om:
+</p>
+<ul class="org-ul">
+<li>Kilder</li>
+<li>Nedlasting</li>
+<li>Innsyn</li>
+<li>Registrering</li>
+<li>Bruk i modeller</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgb3a0cbb" class="outline-2">
+<h2 id="orgb3a0cbb">3 Registrering av data (ikke påbegynt)</h2>
+<div class="outline-text-2" id="text-orgb3a0cbb">
+</div>
+<div id="outline-container-orgfbe9104" class="outline-3">
+<h3 id="orgfbe9104">3.1 Felles krav til registrering</h3>
+<div class="outline-text-3" id="text-orgfbe9104">
+</div>
+<div id="outline-container-org606d9d7" class="outline-4">
+<h4 id="org606d9d7">3.1.1 Definisjon</h4>
+</div>
+<div id="outline-container-orgd145416" class="outline-4">
+<h4 id="orgd145416">3.1.2 Formål med registrering av data</h4>
+</div>
+<div id="outline-container-org65c67c9" class="outline-4">
+<h4 id="org65c67c9">3.1.3 Regelverk</h4>
+</div>
+<div id="outline-container-org26796f4" class="outline-4">
+<h4 id="org26796f4">3.1.4 Kvalitet</h4>
+</div>
+<div id="outline-container-org92408e9" class="outline-4">
+<h4 id="org92408e9">3.1.5 Innhold</h4>
+</div>
+<div id="outline-container-org652c79a" class="outline-4">
+<h4 id="org652c79a">3.1.6 Dataformat</h4>
+</div>
+</div>
+<div id="outline-container-org6536232" class="outline-3">
+<h3 id="org6536232">3.2 Landmåling</h3>
+<div class="outline-text-3" id="text-org6536232">
+</div>
+<div id="outline-container-orgd387926" class="outline-4">
+<h4 id="orgd387926">3.2.1 Definisjon</h4>
+</div>
+<div id="outline-container-orge62d94a" class="outline-4">
+<h4 id="orge62d94a">3.2.2 Formål</h4>
+</div>
+<div id="outline-container-orgbd326fe" class="outline-4">
+<h4 id="orgbd326fe">3.2.3 Registreringsmetodikk</h4>
+</div>
+<div id="outline-container-org87c664f" class="outline-4">
+<h4 id="org87c664f">3.2.4 Kvalitet</h4>
+</div>
+<div id="outline-container-org8084195" class="outline-4">
+<h4 id="org8084195">3.2.5 Dataformat</h4>
+</div>
+<div id="outline-container-org71c1969" class="outline-4">
+<h4 id="org71c1969">3.2.6 Levering</h4>
+</div>
+</div>
+<div id="outline-container-orgc8d0485" class="outline-3">
+<h3 id="orgc8d0485">3.3 Skanning</h3>
+<div class="outline-text-3" id="text-orgc8d0485">
+</div>
+<div id="outline-container-orgb4c6f97" class="outline-4">
+<h4 id="orgb4c6f97">3.3.1 Definisjon</h4>
+</div>
+<div id="outline-container-org2c36023" class="outline-4">
+<h4 id="org2c36023">3.3.2 Formål</h4>
+</div>
+<div id="outline-container-org6a19f6e" class="outline-4">
+<h4 id="org6a19f6e">3.3.3 Registreringsmetodikk</h4>
+</div>
+<div id="outline-container-org4a0ab71" class="outline-4">
+<h4 id="org4a0ab71">3.3.4 Klassifisering av punkt i punktsky</h4>
+</div>
+<div id="outline-container-orgeb826d2" class="outline-4">
+<h4 id="orgeb826d2">3.3.5 Kvalitet</h4>
+</div>
+<div id="outline-container-orge25e2bc" class="outline-4">
+<h4 id="orge25e2bc">3.3.6 Dataformat</h4>
+</div>
+<div id="outline-container-org296e26c" class="outline-4">
+<h4 id="org296e26c">3.3.7 Levering</h4>
+</div>
+</div>
+<div id="outline-container-org7cefbb2" class="outline-3">
+<h3 id="org7cefbb2">3.4 Geologisk kartlegging</h3>
+<div class="outline-text-3" id="text-org7cefbb2">
+</div>
+<div id="outline-container-orgfe18c24" class="outline-4">
+<h4 id="orgfe18c24">3.4.1 Definisjon</h4>
+</div>
+<div id="outline-container-org5af2f5a" class="outline-4">
+<h4 id="org5af2f5a">3.4.2 Formål</h4>
+</div>
+<div id="outline-container-org8e47e96" class="outline-4">
+<h4 id="org8e47e96">3.4.3 Kvalitet</h4>
+</div>
+<div id="outline-container-org66723d0" class="outline-4">
+<h4 id="org66723d0">3.4.4 Registreringsmetodikk</h4>
+</div>
+</div>
+<div id="outline-container-org4c7f6a1" class="outline-3">
+<h3 id="org4c7f6a1">3.5 Målinger</h3>
+<div class="outline-text-3" id="text-org4c7f6a1">
+</div>
+<div id="outline-container-orge54b29c" class="outline-4">
+<h4 id="orge54b29c">3.5.1 Definisjon</h4>
+</div>
+<div id="outline-container-orgdec6624" class="outline-4">
+<h4 id="orgdec6624">3.5.2 Formål</h4>
+</div>
+<div id="outline-container-org4395242" class="outline-4">
+<h4 id="org4395242">3.5.3 Registreringsmetodikk</h4>
+</div>
+</div>
+<div id="outline-container-org145558b" class="outline-3">
+<h3 id="org145558b">3.6 Inspeksjon</h3>
+<div class="outline-text-3" id="text-org145558b">
+</div>
+<div id="outline-container-org2bab798" class="outline-4">
+<h4 id="org2bab798">3.6.1 Definisjon</h4>
+</div>
+<div id="outline-container-org14b95eb" class="outline-4">
+<h4 id="org14b95eb">3.6.2 Formål</h4>
+</div>
+<div id="outline-container-org2dd3941" class="outline-4">
+<h4 id="org2dd3941">3.6.3 Krav til innhold</h4>
+</div>
+</div>
+<div id="outline-container-orgd74e26b" class="outline-3">
+<h3 id="orgd74e26b">3.7 Befaring</h3>
+<div class="outline-text-3" id="text-orgd74e26b">
+</div>
+<div id="outline-container-org9ee4e8e" class="outline-4">
+<h4 id="org9ee4e8e">3.7.1 Definisjon</h4>
+</div>
+<div id="outline-container-org95943dc" class="outline-4">
+<h4 id="org95943dc">3.7.2 Formål</h4>
+</div>
+<div id="outline-container-org169d4e8" class="outline-4">
+<h4 id="org169d4e8">3.7.3 Registreringsmetodikk</h4>
+</div>
+</div>
+<div id="outline-container-org6c319f9" class="outline-3">
+<h3 id="org6c319f9">3.8 Registrering på anlegg</h3>
+<div class="outline-text-3" id="text-org6c319f9">
+</div>
+<div id="outline-container-orgf10255e" class="outline-4">
+<h4 id="orgf10255e">3.8.1 Definisjon</h4>
+</div>
+<div id="outline-container-org708d569" class="outline-4">
+<h4 id="org708d569">3.8.2 Formål</h4>
+</div>
+<div id="outline-container-orgbd3a80a" class="outline-4">
+<h4 id="orgbd3a80a">3.8.3 Kvalitet</h4>
+</div>
+<div id="outline-container-org87c9dc3" class="outline-4">
+<h4 id="org87c9dc3">3.8.4 Innhold</h4>
+</div>
+<div id="outline-container-org5fa2ba7" class="outline-4">
+<h4 id="org5fa2ba7">3.8.6 Dataformat</h4>
+</div>
+<div id="outline-container-orgaa7f43b" class="outline-4">
+<h4 id="orgaa7f43b">3.8.7 Levering</h4>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org7557f6a" class="outline-2">
+<h2 id="org7557f6a">4 Modeller</h2>
+<div class="outline-text-2" id="text-org7557f6a">
+</div>
+<div id="outline-container-org78cad19" class="outline-3">
+<h3 id="org78cad19">4.1 Felles krav til modeller</h3>
+<div class="outline-text-3" id="text-org78cad19">
+</div>
+<div id="outline-container-org1a00621" class="outline-4">
+<h4 id="org1a00621">4.1.1 Definisjon</h4>
+</div>
+<div id="outline-container-org56d7dc5" class="outline-4">
+<h4 id="org56d7dc5">4.1.2 Formål</h4>
+</div>
+<div id="outline-container-org4d8bdcb" class="outline-4">
+<h4 id="org4d8bdcb">4.1.3 Regelverk</h4>
+</div>
+<div id="outline-container-org5c8dd9d" class="outline-4">
+<h4 id="org5c8dd9d">4.1.4 Koordinatsystem</h4>
+</div>
+<div id="outline-container-orgd98ef0f" class="outline-4">
+<h4 id="orgd98ef0f">4.1.5 Kvalitet</h4>
+<div class="outline-text-4" id="text-orgd98ef0f">
+<p>
+Krav til stedfestingsnøyaktighet
+Stedfestingsnøyaktighet er beskrevet i R110 Modellgrunnlag, kapittel 1.7.
+</p>
+<ul class="org-ul">
+<li>Stedfestingsnøyaktigheten til prosjektert geometri, avgjøres av nøyaktigheten til grunnlagdata og grunnlagsmodeller.</li>
+<li>Det er gitt anbefalinger om stedfestingsnøyaktighet for den enkelte grunnlagsmodell, krav til nøyaktighet settes i konkurransegrunnlag/prosjektbestilling.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb92b3c4" class="outline-4">
+<h4 id="orgb92b3c4">4.1.6 Innhold</h4>
+</div>
+<div id="outline-container-org37480a6" class="outline-4">
+<h4 id="org37480a6">4.1.7 Prosjekteringsregler</h4>
+<div class="outline-text-4" id="text-org37480a6">
+</div>
+<ul class="org-ul">
+<li><a id="org87edf89"></a>4.1.7.1 Generelle prosjekteringsregler<br />
+<ul class="org-ul">
+<li><a id="orgcfe4971"></a>4..1.7.1.1 Organisering og navngiving av komponenter i modeller (4.3 Attributter og egenskaper)<br />
+<div class="outline-text-6" id="text-orgcfe4971">
+<p>
+Innhold i modeller skal organiseres som beskrevet i R110 kapittel 1.1.3.
+For en del modelltyper er det utarbeidet <a href="https://github.com/vegvesen/R110-Modellgrunnlag/wiki/VU53-Modellbaserte-vegprosjekter#informasjonsmodellering">informasjonsmodeller</a> som gir oversikt over objektnavn og egenskapsdata.
+Basert på informasjonsmodellene er det utarbeidet maler som kan forenkle organisering og navngiving ved prosjektering/registrering av data:
+</p>
+<ul class="org-ul">
+<li><a href="https://github.com/vegvesen/R110-Modellgrunnlag/wiki/R110-Modellgrunnlag-%E2%80%90-maler-og-vedlegg#objektkodeliste">Objektkodeliste</a></li>
+<li><a href="https://github.com/vegvesen/R110-Modellgrunnlag/wiki/Maler-og-vedlegg-til-R110-Modellgrunnlag#informasjonsmodeller">Maler for lagstruktur</a></li>
+</ul>
+
+<p>
+Prosjekteringsprogramvare har ulike funksjonalitet for å navngi og strukturere objekter i modeller.
+Noen programmer bruker lagnavn og har begrensede muligheter for å tilordne navn på objektsamlinger og objekttyper.
+Andre programmer tillater at bruker oppretter objekttyper og egenskapsdata.
+</p>
+
+<p>
+Målet er å utarbeide objektbiblioteker for objekttypene som kan brukes i prosjekteringen, samt å gjøre objektdefinisjonene fra informasjonsmodeller tilgjengelige i prosjekteringsprogramvare.
+</p>
+</div>
+</li>
+</ul>
+</li>
+
+
+<li><a id="orgdac85c3"></a>4.1.7.2 Forhold som kan analyseres og dokumenteres i prosjekteringen<br /></li>
+<li><a id="orgb6c05f8"></a>4.1.7.3 Prosjektering av geotekniske tiltak<br /></li>
+<li><a id="org7a877d0"></a>4.1.7.4 Prosjektering av terrengarbeider<br />
+<ul class="org-ul">
+<li><a id="org252c45e"></a>4.1.7.4.1 Teoretiske og utførte mengder for terrengarbeider<br /></li>
+</ul>
+</li>
+<li><a id="org790e061"></a>4.1.7.5 Prosjektering av midlertidige komponenter<br /></li>
+<li><a id="orgea384c3"></a>4.1.7.6 Endring av eksisterende komponenter<br /></li>
+<li><a id="orgf558443"></a>4.1.7.7 Informasjon om produkt og produsent i modellene<br /></li>
+<li><a id="orgcec6945"></a>4.1.7.8 Prosjektering av geometri<br />
+<div class="outline-text-5" id="text-orgcec6945">
+<p>
+Geometri prosjekteres som beskrevet i R110 kapittel 4.1.7.8
+Det kan prosjekteres geometri til ulike formål:
+</p>
+<ul class="org-ul">
+<li>Planfaser til og med reguleringsplan: Volumgeometri for utforming og plassering, rastergeometri for visualisering.</li>
+<li>Prosjektering av konkurransegrunnlag for entreprise:
+<ul class="org-ul">
+<li>Utforming og plassering av komponenter: Volumgeometri og rastergeometri.</li>
+<li>Stikningsdata: Referansegeometri: Punkt, linje, polygon. Produseres normalt av utførende, se R110 Modellgrunnlag kapittel 5.3.2.</li>
+<li>Maskinstyringsdata: Referansegeometri: Punkt, linje, polygon. Produseres normalt av utførende, se R110 Modellgrunnlag kapittel 5.3.2.</li>
+<li>FKB/NVDB: Krav til geometri fremgår av Objektlista for FKB/NVDB, se R110 Modellgrunnlag kapittel 5.3.4</li>
+<li>Drift og vedlikehold: ?</li>
+</ul></li>
+</ul>
+</div>
+
+<ul class="org-ul">
+<li><a id="org7271b77"></a>4.1.7.8.1 Fargebruk på geometri<br /></li>
+</ul>
+</li>
+
+
+
+<li><a id="org32c5709"></a>4.1.7.9 Detaljeringsgrad<br />
+<div class="outline-text-5" id="text-org32c5709">
+<p>
+Detaljeringsgrad er beskrevet i R110 kapittel 4.1.7.9
+</p>
+<ul class="org-ul">
+<li>Hvilke komponenter som skal prosjekteres, og hvor mange detaljer som skal tas med, må tilpasses prosjektfase og formål med prosjektet.</li>
+<li>Bruk av forenklet geometri og tegninger tilpasses prosjektets formål og fase.</li>
+<li>Spesifiseres i konkurransegrunnlag eller prosjektbestilling.</li>
+</ul>
+</div>
+</li>
+
+<li><a id="orgf806cb2"></a>4.1.7.10 Presentasjon av innhold i modeller<br />
+<ul class="org-ul">
+<li><a id="org5e299c5"></a>4.1.7.10.1 Visning av modeller og komponenter i modeller<br /></li>
+<li><a id="orgedaa1c3"></a>4.1.7.10.2 Tematiske presentasjoner<br />
+<div class="outline-text-6" id="text-orgedaa1c3">
+<p>
+Tematiserte modellvisninger er beskrevet i R110 Modellgrunnlag, kapittel 4.1.7.10
+</p>
+<ul class="org-ul">
+<li>Hvordan visninger organiseres, vil avhenge av hvilken programvare som brukes i prosjektet.</li>
+<li>Krav til tematiserte visninger avtales etter at det er avgjort hvilken programvare som skal benyttes i prosjektet.</li>
+</ul>
+</div>
+
+<ul class="org-ul">
+<li><a id="org9c2812a"></a>4.1.7.10.2.1 Beregnede linjer<br />
+<div class="outline-text-7" id="text-org9c2812a">
+<p>
+Viser beregnede linjer (alignment) i prosjektområdet.
+</p>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org13e066b"></a>4.1.7.10.2.2 Tekniske installasjoner<br />
+<div class="outline-text-6" id="text-org13e066b">
+<p>
+Viser tekniske installasjoner i prosjektområdet.
+</p>
+</div>
+</li>
+<li><a id="org4999213"></a>4.1.7.10.2.3 Terrengarbeider<br />
+<div class="outline-text-6" id="text-org4999213">
+<p>
+Viser terrengarbeider i prosjektområdet.
+</p>
+</div>
+</li>
+<li><a id="org7cf1938"></a>4.1.7.10.2.4 Risikoområder<br />
+<div class="outline-text-6" id="text-org7cf1938">
+<p>
+Viser områder med risiko for mennesker og naturmiljø i prosjektområdet.
+</p>
+</div>
+</li>
+<li><a id="org8f3c409"></a>4.1.7.10.2.5 Midlertidige komponenter<br />
+<div class="outline-text-6" id="text-org8f3c409">
+<p>
+Viser komponenter som er midlertidige i byggefasen.
+</p>
+</div>
+</li>
+</ul>
+</li>
+
+<li><a id="orga2a3940"></a>4.1.7.11 Dokumentasjon av fremdrift<br />
+<ul class="org-ul">
+<li><a id="org9a6f0c3"></a>4.1.7.11.1 Definisjon<br /></li>
+<li><a id="orgbef05b6"></a>4.1.7.11.2 Fullføringsgrad<br /></li>
+</ul>
+</li>
+</ul>
+</div>
+
+
+<div id="outline-container-org0bd4c40" class="outline-4">
+<h4 id="org0bd4c40">Praktisk bruk av modeller</h4>
+<div class="outline-text-4" id="text-org0bd4c40">
+</div>
+<ul class="org-ul">
+<li><a id="org964a66f"></a>Kvalitetskontroll<br /></li>
+<li><a id="org26ebb9c"></a>Mellom oppdragsgiver og prosjekterende<br /></li>
+<li><a id="orgc521b2a"></a>Mellom oppdragsgiver og entrerprenør (utførelsesentreprise)<br /></li>
+<li><a id="orgcf2b49b"></a>Mellom oppdragsgiver og totalentreprenør (totalentreprise)<br /></li>
+<li><a id="orga46c7f1"></a>Mellom utbyggingsprosjekt og vegforvalter<br />
+<ul class="org-ul">
+<li><a id="org11d5ec0"></a>NVDB<br /></li>
+<li><a id="org22a2ab6"></a>FKB<br /></li>
+<li><a id="org9a72d27"></a>Inspire<br /></li>
+<li><a id="org602070a"></a>Andre<br /></li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="outline-container-orgd0e6b9c" class="outline-4">
+<h4 id="orgd0e6b9c">Deling av modeller</h4>
+<div class="outline-text-4" id="text-orgd0e6b9c">
+</div>
+<ul class="org-ul">
+<li><a id="org614b5bf"></a>Deling av modeller på originalformat<br />
+<div class="outline-text-5" id="text-org614b5bf">
+<p>
+Originalformat påvirker valg av programvare for deling av modeller
+</p>
+</div>
+</li>
+<li><a id="orgd8bb616"></a>Deling av modeller på åpent format<br /></li>
+</ul>
+</div>
+
+<div id="outline-container-org62868a9" class="outline-4">
+<h4 id="org62868a9">Presentasjonsteknikk</h4>
+<div class="outline-text-4" id="text-org62868a9">
+</div>
+<ul class="org-ul">
+<li><a id="org8dc2029"></a>Tegneregler<br /></li>
+<li><a id="orgfe0c9e4"></a>Tematiske presentasjoner<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org134c97b" class="outline-3">
+<h3 id="org134c97b">4.2 Grunnlagsmodeller (ikke påbegynt)</h3>
+<div class="outline-text-3" id="text-org134c97b">
+</div>
+<div id="outline-container-org1cbc0c4" class="outline-4">
+<h4 id="org1cbc0c4">4.2.1 Felles krav til grunnlagsmodeller</h4>
+</div>
+<div id="outline-container-org55f5986" class="outline-4">
+<h4 id="org55f5986">4.2.2 Arealplansituasjon</h4>
+</div>
+<div id="outline-container-orga2f197b" class="outline-4">
+<h4 id="orga2f197b">4.2.3 Befolkning</h4>
+</div>
+<div id="outline-container-org0ac535b" class="outline-4">
+<h4 id="org0ac535b">4.2.4 Bildedata</h4>
+</div>
+<div id="outline-container-orgd052952" class="outline-4">
+<h4 id="orgd052952">4.2.5 Bygg</h4>
+</div>
+<div id="outline-container-orgfa7c65c" class="outline-4">
+<h4 id="orgfa7c65c">4.2.6 Eiendom</h4>
+</div>
+<div id="outline-container-orga4378c6" class="outline-4">
+<h4 id="orga4378c6">4.2.7 Forurensning</h4>
+</div>
+<div id="outline-container-org022b224" class="outline-4">
+<h4 id="org022b224">4.2.8 Friluftsliv</h4>
+</div>
+<div id="outline-container-org5081f39" class="outline-4">
+<h4 id="org5081f39">4.2.9 Grunnforhold</h4>
+</div>
+<div id="outline-container-orgf77f4b9" class="outline-4">
+<h4 id="orgf77f4b9">4.2.10 Kulturarv</h4>
+</div>
+<div id="outline-container-org00e8108" class="outline-4">
+<h4 id="org00e8108">4.2.11 Landskap</h4>
+</div>
+<div id="outline-container-org11453c4" class="outline-4">
+<h4 id="org11453c4">4.2.12 Naturmangfold</h4>
+</div>
+<div id="outline-container-org20ae63e" class="outline-4">
+<h4 id="org20ae63e">4.2.13 Naturressurser</h4>
+</div>
+<div id="outline-container-org037d28c" class="outline-4">
+<h4 id="org037d28c">4.2.14 Næring</h4>
+</div>
+<div id="outline-container-org244f440" class="outline-4">
+<h4 id="org244f440">4.2.15 Samfunnssikkerhet</h4>
+</div>
+<div id="outline-container-orgcdf8d41" class="outline-4">
+<h4 id="orgcdf8d41">4.2.16 Samferdsel</h4>
+</div>
+<div id="outline-container-orga339bcf" class="outline-4">
+<h4 id="orga339bcf">4.2.17 Terrengmodell</h4>
+</div>
+<div id="outline-container-org42797bc" class="outline-4">
+<h4 id="org42797bc">4.2.18 Teknisk infrastruktur</h4>
+</div>
+<div id="outline-container-org3de7299" class="outline-4">
+<h4 id="org3de7299">4.2.19 Vann</h4>
+</div>
+<div id="outline-container-orgd066427" class="outline-4">
+<h4 id="orgd066427">4.2.20 Vær og klima</h4>
+</div>
+</div>
+
+<div id="outline-container-orgf4c28f4" class="outline-3">
+<h3 id="orgf4c28f4">4.3 Fagmodeller (ikke påbegynt)</h3>
+<div class="outline-text-3" id="text-orgf4c28f4">
+</div>
+<div id="outline-container-orgbb4e421" class="outline-4">
+<h4 id="orgbb4e421">4.3.1 Felles krav til fagmodeller</h4>
+</div>
+<div id="outline-container-org9e4a770" class="outline-4">
+<h4 id="org9e4a770">4.3.2 Arealplan</h4>
+</div>
+<div id="outline-container-orga5cb444" class="outline-4">
+<h4 id="orga5cb444">4.3.3 Belysning</h4>
+</div>
+<div id="outline-container-orgf387720" class="outline-4">
+<h4 id="orgf387720">4.3.4 Bru</h4>
+</div>
+<div id="outline-container-orgbd2196a" class="outline-4">
+<h4 id="orgbd2196a">4.3.5 Bygninger</h4>
+</div>
+<div id="outline-container-org483e885" class="outline-4">
+<h4 id="org483e885">4.3.6 Elektro</h4>
+</div>
+<div id="outline-container-org61d5de4" class="outline-4">
+<h4 id="org61d5de4">4.3.7 Ferjekai</h4>
+</div>
+<div id="outline-container-org5d48a0e" class="outline-4">
+<h4 id="org5d48a0e">4.3.8 Gatemøbler</h4>
+</div>
+<div id="outline-container-orgb282258" class="outline-4">
+<h4 id="orgb282258">4.3.9 Geologi</h4>
+</div>
+<div id="outline-container-org5f6738d" class="outline-4">
+<h4 id="org5f6738d">4.3.10 Geoteknikk</h4>
+</div>
+<div id="outline-container-org9652ff6" class="outline-4">
+<h4 id="org9652ff6">4.3.11 Grunnerverv</h4>
+</div>
+<div id="outline-container-org657db4c" class="outline-4">
+<h4 id="org657db4c">4.3.12 Konstruksjoner</h4>
+</div>
+<div id="outline-container-orge366026" class="outline-4">
+<h4 id="orge366026">4.3.13 Kulturminnevern</h4>
+</div>
+<div id="outline-container-org6a5fb28" class="outline-4">
+<h4 id="org6a5fb28">4.3.14 Massehåndtering</h4>
+</div>
+<div id="outline-container-org66b0cd6" class="outline-4">
+<h4 id="org66b0cd6">4.3.15 Naturvern</h4>
+</div>
+<div id="outline-container-orgba9d48c" class="outline-4">
+<h4 id="orgba9d48c">4.3.16 Overvann</h4>
+</div>
+<div id="outline-container-orgdbcee39" class="outline-4">
+<h4 id="orgdbcee39">4.3.17 Rekkverk</h4>
+</div>
+<div id="outline-container-org3b865ab" class="outline-4">
+<h4 id="org3b865ab">4.3.18 Risikoreduksjon</h4>
+</div>
+<div id="outline-container-orge53e351" class="outline-4">
+<h4 id="orge53e351">4.3.19 Signal</h4>
+</div>
+<div id="outline-container-orga7873b0" class="outline-4">
+<h4 id="orga7873b0">4.3.20 Skilt</h4>
+</div>
+<div id="outline-container-orgdb19e71" class="outline-4">
+<h4 id="orgdb19e71">4.3.21 Steinsetting</h4>
+</div>
+<div id="outline-container-org8c94d1f" class="outline-4">
+<h4 id="org8c94d1f">4.3.22 Terrengforming</h4>
+</div>
+<div id="outline-container-org79f96a0" class="outline-4">
+<h4 id="org79f96a0">4.3.23 Tunnel</h4>
+</div>
+<div id="outline-container-org99b7aaf" class="outline-4">
+<h4 id="org99b7aaf">4.3.24 Vann og avløp</h4>
+</div>
+<div id="outline-container-orgc27d5b4" class="outline-4">
+<h4 id="orgc27d5b4">4.3.25 Veg</h4>
+</div>
+<div id="outline-container-org3255d86" class="outline-4">
+<h4 id="org3255d86">4.3.26 Vegetasjon</h4>
+</div>
+<div id="outline-container-org2d1a7a1" class="outline-4">
+<h4 id="org2d1a7a1">4.3.27 Vegoppmerking</h4>
+</div>
+</div>
+
+<div id="outline-container-orgeecc28b" class="outline-3">
+<h3 id="orgeecc28b">4.4 Situasjonsmodell (ikke påbegynt)</h3>
+<div class="outline-text-3" id="text-orgeecc28b">
+</div>
+<div id="outline-container-org35126e2" class="outline-4">
+<h4 id="org35126e2">4.4.1 Definisjon</h4>
+</div>
+<div id="outline-container-orgc2abc74" class="outline-4">
+<h4 id="orgc2abc74">4.4.2 Formål</h4>
+</div>
+<div id="outline-container-orgb297a0a" class="outline-4">
+<h4 id="orgb297a0a">4.4.3 Kvalitet</h4>
+</div>
+<div id="outline-container-org99907cd" class="outline-4">
+<h4 id="org99907cd">4.4.4 Innhold</h4>
+</div>
+<div id="outline-container-orgb1cda81" class="outline-4">
+<h4 id="orgb1cda81">4.4.5 Prosjekteringsregler</h4>
+</div>
+</div>
+
+<div id="outline-container-org647262e" class="outline-3">
+<h3 id="org647262e">4.5 Tverrfaglig (ikke påbegynt)</h3>
+<div class="outline-text-3" id="text-org647262e">
+</div>
+<div id="outline-container-org781d062" class="outline-4">
+<h4 id="org781d062">4.5.1 Definisjon</h4>
+</div>
+<div id="outline-container-org4dbf118" class="outline-4">
+<h4 id="org4dbf118">4.5.2 Formål</h4>
+</div>
+<div id="outline-container-org88b4f94" class="outline-4">
+<h4 id="org88b4f94">4.5.3 Kvalitet</h4>
+</div>
+<div id="outline-container-org58d9d90" class="outline-4">
+<h4 id="org58d9d90">4.5.4 Innhold</h4>
+</div>
+<div id="outline-container-org08a4bc3" class="outline-4">
+<h4 id="org08a4bc3">4.5.5 Prosjekteringsregler</h4>
+</div>
+</div>
+
+<div id="outline-container-orgb16ba3e" class="outline-3">
+<h3 id="orgb16ba3e">4.6 Samordningsmodell (ikke påbegynt)</h3>
+<div class="outline-text-3" id="text-orgb16ba3e">
+</div>
+<div id="outline-container-orgf0a7c7f" class="outline-4">
+<h4 id="orgf0a7c7f">4.6.1 Definisjon</h4>
+</div>
+<div id="outline-container-org57304ad" class="outline-4">
+<h4 id="org57304ad">4.6.2 Formål</h4>
+</div>
+<div id="outline-container-org63a2297" class="outline-4">
+<h4 id="org63a2297">4.6.3 Kvalitet</h4>
+</div>
+<div id="outline-container-org5a32d05" class="outline-4">
+<h4 id="org5a32d05">4.6.4 Prosjekteringsregler</h4>
+</div>
+<div id="outline-container-org7d479a8" class="outline-4">
+<h4 id="org7d479a8">4.6.5 Innhold</h4>
+</div>
+<div id="outline-container-org9a8b6e9" class="outline-4">
+<h4 id="org9a8b6e9">4.6.6 Tverrfaglige analyser</h4>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org928e191" class="outline-2">
+<h2 id="org928e191">5 Resultatdata (5.4.2)</h2>
+<div class="outline-text-2" id="text-org928e191">
+</div>
+<div id="outline-container-org9077431" class="outline-3">
+<h3 id="org9077431">5.1 Felles krav til resultatdata</h3>
+<div class="outline-text-3" id="text-org9077431">
+</div>
+<div id="outline-container-org633112b" class="outline-4">
+<h4 id="org633112b">5.1.1 Definisjon</h4>
+</div>
+<div id="outline-container-org4dfe10e" class="outline-4">
+<h4 id="org4dfe10e">5.1.2 Formål</h4>
+</div>
+<div id="outline-container-org61ce3ae" class="outline-4">
+<h4 id="org61ce3ae">5.1.3 Regelverk</h4>
+</div>
+<div id="outline-container-org3ce72ff" class="outline-4">
+<h4 id="org3ce72ff">5.1.4 Dekningsgrad</h4>
+</div>
+<div id="outline-container-org4a07387" class="outline-4">
+<h4 id="org4a07387">5.1.5 Kvalitet</h4>
+</div>
+<div id="outline-container-orga29fe48" class="outline-4">
+<h4 id="orga29fe48">5.1.6 Innhold</h4>
+</div>
+</div>
+<div id="outline-container-org6c89574" class="outline-3">
+<h3 id="org6c89574">5.2 Presentasjoner</h3>
+<div class="outline-text-3" id="text-org6c89574">
+</div>
+<div id="outline-container-org53bdc24" class="outline-4">
+<h4 id="org53bdc24">5.2.1 Felles krav til presentasjoner</h4>
+</div>
+<div id="outline-container-org1054b75" class="outline-4">
+<h4 id="org1054b75">5.2.2 Presentasjonsmodell</h4>
+</div>
+<div id="outline-container-org5540806" class="outline-4">
+<h4 id="org5540806">5.2.3 Animasjonsfilm</h4>
+</div>
+<div id="outline-container-org09887fd" class="outline-4">
+<h4 id="org09887fd">5.2.4 Manipulerte bilder</h4>
+</div>
+<div id="outline-container-org2310c69" class="outline-4">
+<h4 id="org2310c69">5.2.5 Foto og video</h4>
+</div>
+<div id="outline-container-orgf17f0d6" class="outline-4">
+<h4 id="orgf17f0d6">5.2.6 Prosjektpresentasjoner</h4>
+</div>
+</div>
+<div id="outline-container-orgc7bbc39" class="outline-3">
+<h3 id="orgc7bbc39">5.3 Datasett</h3>
+<div class="outline-text-3" id="text-orgc7bbc39">
+</div>
+<div id="outline-container-org1fd5cf6" class="outline-4">
+<h4 id="org1fd5cf6">5.3.1 Felles krav til datasett</h4>
+</div>
+<div id="outline-container-org23f6716" class="outline-4">
+<h4 id="org23f6716">5.3.2 Stikningsdata</h4>
+</div>
+<div id="outline-container-orgf470fca" class="outline-4">
+<h4 id="orgf470fca">5.3.3 Maskinstyringsdata</h4>
+</div>
+<div id="outline-container-org5c240fa" class="outline-4">
+<h4 id="org5c240fa">5.3.4 NVDB- og FKB-grunnlag</h4>
+</div>
+</div>
+<div id="outline-container-org7e8e946" class="outline-3">
+<h3 id="org7e8e946">5.4 Dokumenter</h3>
+<div class="outline-text-3" id="text-org7e8e946">
+</div>
+<div id="outline-container-org0d70252" class="outline-4">
+<h4 id="org0d70252">5.4.1 Felles krav til dokumenter</h4>
+</div>
+<div id="outline-container-orgcd9a00c" class="outline-4">
+<h4 id="orgcd9a00c">5.4.2 Tegninger</h4>
+<div class="outline-text-4" id="text-orgcd9a00c">
+<p>
+Krav til tegninger er beskrevet i R110 kapittel 5.4.2
+</p>
+
+<ul class="org-ul">
+<li>Tegningseksempler
+<ul class="org-ul">
+<li>Standardtegninger</li>
+<li>Tegningstyper til FDV, planmyndigheter mm</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9f12496" class="outline-4">
+<h4 id="org9f12496">5.4.3 Rapporter</h4>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org3c47664" class="outline-2">
+<h2 id="org3c47664">6 Lagyring og arkivering av dokumentasjon (ikke påbegynt)</h2>
+<div class="outline-text-2" id="text-org3c47664">
+</div>
+<div id="outline-container-org154c955" class="outline-3">
+<h3 id="org154c955">6.1 Lagring av dokumentasjon</h3>
+</div>
+<div id="outline-container-org30461f0" class="outline-3">
+<h3 id="org30461f0">6.2 Arkivering av dokumentasjon</h3>
+</div>
+</div>
+
+
+
+
+
+
+
+<div id="outline-container-orgfa89f87" class="outline-2">
+<h2 id="orgfa89f87">7 Programvare (ikke påbegynt)</h2>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2025-03-06 tor. 15:11</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
