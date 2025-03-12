@@ -1,0 +1,1356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-03-12 ons. 15:01 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>R110 Modellgrunnlag Definisjoner</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">R110 Modellgrunnlag Definisjoner</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org05d2047">Analyse</a></li>
+<li><a href="#org7ec0279">BREEAM</a></li>
+<li><a href="#org5a4c33a">Database</a></li>
+<li><a href="#org06891ed">Datafil</a></li>
+<li><a href="#org7f9d8b6">Datafil - filformat</a>
+<ul>
+<li><a href="#org55d7672">Datafil - filformat - GML</a></li>
+<li><a href="#orga59dd40">Datafil - filformat - Land XML</a></li>
+<li><a href="#org4f95ddf">Datafil - filformat - LAS</a></li>
+<li><a href="#org0e519ae">Datafil - filformat - IFC</a></li>
+<li><a href="#orge541d7a">Datafil - filformat - PDF</a></li>
+<li><a href="#orgc55c648">Datafil - filformat - WFS</a></li>
+</ul>
+</li>
+<li><a href="#org0dbaa22">Datafil - metadata</a></li>
+<li><a href="#orgc5c81e8">Delmodell</a></li>
+<li><a href="#org40b7ad1">Det offentlige kartgrunnlaget (DOK)</a></li>
+<li><a href="#orgfbaad70">Dokumentasjon</a></li>
+<li><a href="#orgd211902">Dokumentasjon - sluttdokumentasjon</a>
+<ul>
+<li><a href="#org6e8c08c">Som utført dokumentasjon</a></li>
+</ul>
+</li>
+<li><a href="#org936b7de">Dokumentasjon - stedfestet dokumentasjon</a></li>
+<li><a href="#org6e1d790">Dokumentasjonstype</a></li>
+<li><a href="#org6ce89a1">Dokumenter</a></li>
+<li><a href="#orgcce4b70">Fagdomene</a></li>
+<li><a href="#orgdad81a4">Fagfolk</a></li>
+<li><a href="#org64d62de">Felles kartdatabase (FKB)</a></li>
+<li><a href="#orgbdaf7fd">Geometri</a></li>
+<li><a href="#org0839830">Geometri - typer</a>
+<ul>
+<li><a href="#org8d24b71">Geometri - vektor</a></li>
+<li><a href="#org1a9862f">Geometri - raster</a></li>
+<li><a href="#org1db54dd">Geometri - rutenettsmodell</a></li>
+<li><a href="#org93dd88f">Geometri - TIN</a></li>
+<li><a href="#orgbb13e5a">Referansegeometri</a></li>
+<li><a href="#orgfa34b5b">Geoteknikk</a></li>
+</ul>
+</li>
+<li><a href="#org33ca3b3">Geovekst</a></li>
+<li><a href="#org9f15b17">GPS</a></li>
+<li><a href="#org2031400">Grunnlagsdata:</a></li>
+<li><a href="#org3b6308a">Grunnlagsmodell</a></li>
+<li><a href="#orgd873a9a">Informasjonsmodell</a></li>
+<li><a href="#org404e20f">Inspire</a></li>
+<li><a href="#org5a12b08">ISO</a></li>
+<li><a href="#org8388f7b">Konkurransegrunnlag</a></li>
+<li><a href="#org0f8ab4a">Kvalitet</a></li>
+<li><a href="#orgf159e82">Landmåling</a></li>
+<li><a href="#org99a0cdf">LIDAR</a></li>
+<li><a href="#org16de553">Maskinstyringsdata</a></li>
+<li><a href="#orge86a693">Matrikkelen</a></li>
+<li><a href="#org7e6f6a7">Modell</a></li>
+<li><a href="#org0fc8a0a">Nasjonalt geografisk informasjonssystem (NGIS)</a></li>
+<li><a href="#org983bf21">Norge digitalt</a></li>
+<li><a href="#orgae3a918">Norsk Standard (NS)</a></li>
+<li><a href="#org7d284f6">NVDB</a></li>
+<li><a href="#orgcbdfbd4">Objektsamling</a></li>
+<li><a href="#org6eb503f">Objekttype</a></li>
+<li><a href="#orgce51936">OGC</a></li>
+<li><a href="#orgbf825db">OMG</a></li>
+<li><a href="#org09994b8">Ortofoto</a></li>
+<li><a href="#org0d4c95c">Overheng</a></li>
+<li><a href="#org56dba5b">Produktbibliotek</a></li>
+<li><a href="#org5421035">PROF</a></li>
+<li><a href="#org00396c2">Prosjektering</a></li>
+<li><a href="#orge28d8e6">Prosjektets koordinatsystem</a>
+<ul>
+<li><a href="#orgf7ee455">Koordinatsystem - grunnriss</a></li>
+<li><a href="#org5aaca92">Koordinatsystem - høyde</a></li>
+<li><a href="#org72a6b96">Koordinatsystem - transformasjon</a></li>
+</ul>
+</li>
+<li><a href="#org70e4574">Prosjektområde</a>
+<ul>
+<li><a href="#org49721cf">Prosjektområde - inngrepssone</a></li>
+<li><a href="#org14ef764">Prosjektområde - visualiseringssone</a></li>
+</ul>
+</li>
+<li><a href="#org7135d0b">Registrering</a></li>
+<li><a href="#org0710f75">Registrerte data:</a></li>
+<li><a href="#org8caa72a">Resultatdata:</a></li>
+<li><a href="#org1db16ac">Sentral felles kartbase (SFKB)</a></li>
+<li><a href="#orgf5da6a8">SOSI</a></li>
+<li><a href="#orge191ef7">Stedfestet informasjon</a></li>
+<li><a href="#orgf42c471">Stikningsdata</a></li>
+<li><a href="#orgfc2609c">Tegning</a></li>
+<li><a href="#org0382713">Terrengarbeid</a></li>
+<li><a href="#org87ac16a">Terrengarbeid - teoretiske mengder</a></li>
+<li><a href="#org95386d8">Terrengarbeid - utførte mengder</a></li>
+<li><a href="#org61304e1">Toleranse</a></li>
+<li><a href="#org0f9bcd1">UML</a></li>
+<li><a href="#org5911e33">VegLCA</a></li>
+<li><a href="#orgb8fa74a">Vegprosjekt</a></li>
+<li><a href="#org7a097b2">Vegprosjekt - prosjektfaser</a></li>
+<li><a href="#org0f0aa15">XML</a></li>
+<li><a href="#org1e252a3">XSD-skjema</a></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org05d2047" class="outline-2">
+<h2 id="org05d2047">Analyse</h2>
+<div class="outline-text-2" id="text-org05d2047">
+<p>
+I R110 beskrives ulike typer analyser som kan gjennomføres med utgangspunkt i modeller.
+Se også: <a href="https://snl.no/analyse">https://snl.no/analyse</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7ec0279" class="outline-2">
+<h2 id="org7ec0279">BREEAM</h2>
+<div class="outline-text-2" id="text-org7ec0279">
+<p>
+BREEAM (Building Research Establishment Environment Assessment Method) et verktøy for å miljøsertifisere bygninger.
+</p>
+
+<p>
+Se også: <a href="https://no.wikipedia.org/wiki/BREEAM">https://no.wikipedia.org/wiki/BREEAM</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5a4c33a" class="outline-2">
+<h2 id="org5a4c33a">Database</h2>
+<div class="outline-text-2" id="text-org5a4c33a">
+<p>
+En samling med lagrede data. 
+Databaser kan lagres i datafiler eller på dataservere.
+</p>
+
+<p>
+Se også: <a href="https://snl.no/database">https://snl.no/database</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org06891ed" class="outline-2">
+<h2 id="org06891ed">Datafil</h2>
+<div class="outline-text-2" id="text-org06891ed">
+<p>
+En datafil lagrer data som kan leses av datamaskiner
+Datafiler kan beskrives med metadata
+Datafiler kan leveres på ulike formater
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7f9d8b6" class="outline-2">
+<h2 id="org7f9d8b6">Datafil - filformat</h2>
+<div class="outline-text-2" id="text-org7f9d8b6">
+<p>
+Dataformat beskriver hvordan informasjon skal lagres i datafiler.
+Filformater er åpne eller proprietære.
+Åpne formater har dokumentasjon om hvordan informasjon lagres fritt tilgjengelig.
+Proprietære formater er eide og har ikke slik dokumentasjon fritt tilgjengelig.
+</p>
+
+<p>
+Se også:
+<a href="https://snl.no/filformat">https://snl.no/filformat</a>
+<a href="https://snl.no/dataformat">https://snl.no/dataformat</a>
+</p>
+</div>
+
+<div id="outline-container-org55d7672" class="outline-3">
+<h3 id="org55d7672">Datafil - filformat - GML</h3>
+<div class="outline-text-3" id="text-org55d7672">
+<p>
+Geography Markup Language.
+Se også: <a href="https://no.wikipedia.org/wiki/Geography_Markup_Language">https://no.wikipedia.org/wiki/Geography_Markup_Language</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga59dd40" class="outline-3">
+<h3 id="orga59dd40">Datafil - filformat - Land XML</h3>
+<div class="outline-text-3" id="text-orga59dd40">
+<p>
+Tekstbasert datautvekslingsformat for geometrifiler til bruk i landmåling og prosjekteringsprogramvare.
+</p>
+
+<p>
+Se også: <a href="http://www.landxml.org/">http://www.landxml.org/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4f95ddf" class="outline-3">
+<h3 id="org4f95ddf">Datafil - filformat - LAS</h3>
+<div class="outline-text-3" id="text-org4f95ddf">
+<p>
+Åpent format tilpasset registrering og lagring av LIDAR punktdata.
+</p>
+
+<p>
+Se også: <a href="https://www.ogc.org/publications/standard/las/">https://www.ogc.org/publications/standard/las/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0e519ae" class="outline-3">
+<h3 id="org0e519ae">Datafil - filformat - IFC</h3>
+<div class="outline-text-3" id="text-org0e519ae">
+<p>
+Industry Foundation Classes
+</p>
+
+<p>
+Se også: <a href="https://en.wikipedia.org/wiki/Industry_Foundation_Classes">https://en.wikipedia.org/wiki/Industry_Foundation_Classes</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge541d7a" class="outline-3">
+<h3 id="orge541d7a">Datafil - filformat - PDF</h3>
+<div class="outline-text-3" id="text-orge541d7a">
+<p>
+Portable Document Format (PDF) er et standardisert filformat for utveksling av dokumenter. PDF er en åpen standard som offisielt ble publisert 1. juli 2008 av ISO som ISO 32000-1:2008.
+</p>
+
+<p>
+Se også: <a href="https://en.wikipedia.org/wiki/PDF">https://en.wikipedia.org/wiki/PDF</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc55c648" class="outline-3">
+<h3 id="orgc55c648">Datafil - filformat - WFS</h3>
+<div class="outline-text-3" id="text-orgc55c648">
+<p>
+Mer en protokoll/standard for overføring av stedfestet informasjon enne et format, men blir gjerne omtalt som et format.
+</p>
+
+<p>
+Se også: <a href="https://www.ogc.org/publications/standard/wfs/">https://www.ogc.org/publications/standard/wfs/</a>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0dbaa22" class="outline-2">
+<h2 id="org0dbaa22">Datafil - metadata</h2>
+<div class="outline-text-2" id="text-org0dbaa22">
+<p>
+Data som gir informasjon om innholdet i en datafil, data om data.
+Se også: <a href="https://snl.no/metadata">https://snl.no/metadata</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc5c81e8" class="outline-2">
+<h2 id="orgc5c81e8">Delmodell</h2>
+<div class="outline-text-2" id="text-orgc5c81e8">
+<p>
+En avgrenset del av en modelltype.
+Eksempel: En vegstrekning avgrenset med profilnummer i fagmodell Veg.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org40b7ad1" class="outline-2">
+<h2 id="org40b7ad1">Det offentlige kartgrunnlaget (DOK)</h2>
+<div class="outline-text-2" id="text-org40b7ad1">
+<p>
+Kommunene skal i samarbeid med staten organisere ajourføring og tilgang til det offentlige kartgrunnlaget. Kommunen, utbyggere, statlige etater og Kartverket må følge det som står i kart- og planforskriften.
+Se også: <a href="https://www.regjeringen.no/no/tema/plan-bygg-og-eiendom/plan_bygningsloven/planlegging/veiledning/plankart_planregister/dok/id2470662/?expand=factbox2839010">https://www.regjeringen.no/no/tema/plan-bygg-og-eiendom/plan_bygningsloven/planlegging/veiledning/plankart_planregister/dok/id2470662/?expand=factbox2839010</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfbaad70" class="outline-2">
+<h2 id="orgfbaad70">Dokumentasjon</h2>
+<div class="outline-text-2" id="text-orgfbaad70">
+<p>
+Definisjon fra Store norske leksikon:
+Dokumentasjon defineres i R110 som “digital informasjon om vegprosjekter”
+Til hver prosjektfase skal det bestilles og utarbeides et sett med dokumentasjon
+Denne håndboken definerer dokumentasjonstypene som kan bestilles
+Dokumentasjonen kan beskrive: 
+</p>
+<ul class="org-ul">
+<li>eksisterende situasjon i prosjektområdet</li>
+<li>planlagte- og utførte tiltak i prosjektområdet</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd211902" class="outline-2">
+<h2 id="orgd211902">Dokumentasjon - sluttdokumentasjon</h2>
+<div class="outline-text-2" id="text-orgd211902">
+<p>
+Siste leveranse av dokumentasjon i en prosjektfase kalles “sluttdokumentasjon”.
+</p>
+</div>
+
+<div id="outline-container-org6e8c08c" class="outline-3">
+<h3 id="org6e8c08c">Som utført dokumentasjon</h3>
+<div class="outline-text-3" id="text-org6e8c08c">
+<p>
+Sluttdokumentasjon levert etter byggefasen kalles “som utført” dokumentasjon.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org936b7de" class="outline-2">
+<h2 id="org936b7de">Dokumentasjon - stedfestet dokumentasjon</h2>
+<div class="outline-text-2" id="text-org936b7de">
+<p>
+Stedfestet dokumentasjon/informasjon beskriver objekter, hendelser og forhold der posisjon, stedet på jorda, er en vesentlig del av informasjonen. Objekter er definert med navn og egenskapsdata. Egenskapsdata kan beskrive objekters form, materialtype, posisjon og andre forhold. Objekters form og plassering beskrives med prosjektert eller registrert geometri. Geometrien refereres i nasjonale koordinatsystem, slik at objekter kan plasseres i- eller gjenfinnes i terrenget.
+</p>
+
+<p>
+Se også: <a href="https://snl.no/stedfesting">https://snl.no/stedfesting</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6e1d790" class="outline-2">
+<h2 id="org6e1d790">Dokumentasjonstype</h2>
+<div class="outline-text-2" id="text-org6e1d790">
+<p>
+En dokumentasjonstype er et avgrenset sett med dokumentasjon, for eksempel en fagmodell Veg eller fagmodell Tunnel.
+Hver dokumentasjonstype har et navn og krav eller anbefalinger til innhold.
+Det skal fremgå av vegprosjekters konkurransegrunnlag Hvilke dokumentasjonstyper som skal utarbeides i et vegprosjekt.
+</p>
+
+<p>
+R110 organiserer dokumentasjonen i følgende hovedtyper:
+</p>
+<ul class="org-ul">
+<li>Grunnlagsdata</li>
+<li>Registrerte data</li>
+<li>Modeller</li>
+<li>Resultatdata</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6ce89a1" class="outline-2">
+<h2 id="org6ce89a1">Dokumenter</h2>
+<div class="outline-text-2" id="text-org6ce89a1">
+<p>
+Dokumenter er i R110 Modellgrunnlag definert som "Resultatdata".
+Dokumenter regnes ikke som stedfestet informasjon.
+Dokumenter er datafiler som kan inneholde:
+</p>
+<ul class="org-ul">
+<li>Tekst.</li>
+<li>Tegninger.</li>
+<li>Bilder.</li>
+<li>Tabeller.</li>
+<li>Andre illustrasjoner.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcce4b70" class="outline-2">
+<h2 id="orgcce4b70">Fagdomene</h2>
+<div class="outline-text-2" id="text-orgcce4b70">
+<p>
+Et arbeidsfelt eller område man har kjennskap til eller myndighet over
+I denne håndboken knyttet ansvar for dokumentasjonstyper til fagdomener
+</p>
+
+<p>
+Et fagdomene kan ha et hoved- eller delansvar for en dokumentasjonstype, for eksempel:
+</p>
+<ul class="org-ul">
+<li>Bestille</li>
+<li>Produsere</li>
+<li>Kontrollere</li>
+<li>Godkjenne</li>
+</ul>
+
+<p>
+Følgende fagdomener er definert:
+</p>
+<ul class="org-ul">
+<li>Arealplanlegging</li>
+<li>Bru</li>
+<li>Elektro</li>
+<li>Geodesi</li>
+<li>Geofag</li>
+<li>Landskapsarkitektur</li>
+<li>Miljøvitenskap</li>
+<li>Risiko</li>
+<li>Trafikkstyring</li>
+<li>Tunnel</li>
+<li>Vann</li>
+<li>Veg</li>
+<li>Prosjektledelse</li>
+<li>Dataforvalter</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgdad81a4" class="outline-2">
+<h2 id="orgdad81a4">Fagfolk</h2>
+<div class="outline-text-2" id="text-orgdad81a4">
+<p>
+Det Norske Adademis Ordbok sin definisjon:
+"Personer som har spesiell viten og kunnskap på et fagområde ; fagutdannede folk"
+I R110 er formålet at faglige vurderinger skal gjøres av personer med relevant fagkompetanse, dvs. av fagfolk.
+</p>
+
+<p>
+Se også: Se også: <a href="https://naob.no/ordbok/fagfolk">https://naob.no/ordbok/fagfolk</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org64d62de" class="outline-2">
+<h2 id="org64d62de">Felles kartdatabase (FKB)</h2>
+<div class="outline-text-2" id="text-org64d62de">
+<p>
+Felles kartdatabase (FKB) er en samling primærdatasett som samles inn og forvaltes i fellesskap av Geovekst-partene i en kommune.
+Se også: <a href="https://www.kartverket.no/geodataarbeid/geovekst/fkb-produktspesifikasjoner">https://www.kartverket.no/geodataarbeid/geovekst/fkb-produktspesifikasjoner</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbdaf7fd" class="outline-2">
+<h2 id="orgbdaf7fd">Geometri</h2>
+<div class="outline-text-2" id="text-orgbdaf7fd">
+<p>
+I R110 benyttes begrepet "Geometri" om data som beskriver komponenters form, stedfesting og plassering/orientering.
+Se også: <a href="https://no.wikipedia.org/wiki/Geometri">https://no.wikipedia.org/wiki/Geometri</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0839830" class="outline-2">
+<h2 id="org0839830">Geometri - typer</h2>
+<div class="outline-text-2" id="text-org0839830">
+<p>
+I R110 benyttes geometrityper definert i OGC-standarden LandInfra Conceptual Model.
+Se også: <a href="https://docs.ogc.org/is/15-111r1/15-111r1.html">https://docs.ogc.org/is/15-111r1/15-111r1.html</a>
+</p>
+</div>
+
+<div id="outline-container-org8d24b71" class="outline-3">
+<h3 id="org8d24b71">Geometri - vektor</h3>
+<div class="outline-text-3" id="text-org8d24b71">
+<p>
+Vektor-geometri er definert av koordinater, dvs. alle punkt som inngår i beskrivelsen av et objekt kan ha x, y og z koordinater.
+</p>
+
+<p>
+Se også:
+<a href="https://en.wikipedia.org/wiki/Vector_graphics">https://en.wikipedia.org/wiki/Vector_graphics</a>
+<a href="https://snl.no/geografiske_data">https://snl.no/geografiske_data</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1a9862f" class="outline-3">
+<h3 id="org1a9862f">Geometri - raster</h3>
+<div class="outline-text-3" id="text-org1a9862f">
+<p>
+Raster-geometri beskriver objekter med pixler, fargelagte punkt, og mangler koordinatinformasjon som finnes i vektor-geometri.
+</p>
+
+<p>
+Se også:
+<a href="https://en.wikipedia.org/wiki/Raster_graphics">https://en.wikipedia.org/wiki/Raster_graphics</a>
+<a href="https://snl.no/geografiske_data">https://snl.no/geografiske_data</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1db54dd" class="outline-3">
+<h3 id="org1db54dd">Geometri - rutenettsmodell</h3>
+<div class="outline-text-3" id="text-org1db54dd">
+<p>
+En overflate (f. eks terrengoverflate) beskrevet med kvadratiske ruter. Rutenettsmodell gir mindre nøyaktig beskrivelse av en overflate enn triangulert modell (TIN).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org93dd88f" class="outline-3">
+<h3 id="org93dd88f">Geometri - TIN</h3>
+<div class="outline-text-3" id="text-org93dd88f">
+<p>
+TIN-modeller brukes til å beskrive terrengoverflater og andre overflater med triangler basert på data fra skanning og landmåling.
+</p>
+
+<p>
+Se også: <a href="https://en.wikipedia.org/wiki/Triangulated_irregular_network">https://en.wikipedia.org/wiki/Triangulated_irregular_network</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbb13e5a" class="outline-3">
+<h3 id="orgbb13e5a">Referansegeometri</h3>
+<div class="outline-text-3" id="text-orgbb13e5a">
+<p>
+I prosjektering benyttes gjerne volumogeometri (solid-geometri, romlig geometri) for å beskrive objekter, men disse lar seg ikke overføre direkte til alle systemer. Referansegeometri etableres for å støtte dataoverføring til systemer som ikke kan benytte volum-geometri.
+Som referansegeometri benyttes gjerne punkt, linje og polygon.
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgfa34b5b" class="outline-3">
+<h3 id="orgfa34b5b">Geoteknikk</h3>
+<div class="outline-text-3" id="text-orgfa34b5b">
+<p>
+Geoteknikk er det ingeniørfaget som handler om jord og løsmassers (sand, silt og leire) egenskaper i byggeteknisk henseende, og vurdering av stabilitet og fare for skred.
+</p>
+
+<p>
+Se også: <a href="https://www.ngi.no/om-ngi/om-geoteknikk-og-geofag/hva-er-geoteknikk/">https://www.ngi.no/om-ngi/om-geoteknikk-og-geofag/hva-er-geoteknikk/</a>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org33ca3b3" class="outline-2">
+<h2 id="org33ca3b3">Geovekst</h2>
+<div class="outline-text-2" id="text-org33ca3b3">
+<p>
+Geovekst er et samarbeid om felles etablering, forvaltning, drift, vedlikehold og bruk av geografisk informasjon. Deltakerne er Kartverket, kommunene, Statens vegvesen, fylkeskommunene, Energi Norge, Landbruksdepartementet, Bane NOR, Telenor og NVE.
+Se også: <a href="https://www.kartverket.no/geodataarbeid/geovekst">https://www.kartverket.no/geodataarbeid/geovekst</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9f15b17" class="outline-2">
+<h2 id="org9f15b17">GPS</h2>
+<div class="outline-text-2" id="text-org9f15b17">
+<p>
+Global Positioning System. Satelittbasert posisjonerings og navigasjonssystem.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2031400" class="outline-2">
+<h2 id="org2031400">Grunnlagsdata:</h2>
+<div class="outline-text-2" id="text-org2031400">
+<p>
+Data som beskriver eksisterende situasjon i prosjektområdet.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3b6308a" class="outline-2">
+<h2 id="org3b6308a">Grunnlagsmodell</h2>
+<div class="outline-text-2" id="text-org3b6308a">
+<p>
+Eksisterende komponenter på, under og over bakken dokumenteres i grunnlagsmodeller.
+Komponentene kan beskrive fysiske objekter eller tilstander i prosjektområdet.
+Grunnlagsmodeller beskriver eksisterende situasjon basert på grunnlagsdata.
+For å etablere en 3D-modell av eksisterende situasjon kan det være behov for å tolke og omprosjektere grunnlagsdata med ny geometri.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd873a9a" class="outline-2">
+<h2 id="orgd873a9a">Informasjonsmodell</h2>
+<div class="outline-text-2" id="text-orgd873a9a">
+<p>
+En informasjonsmodell er i R110 definert som en skjematisk beskrivelse av et fagdomene.
+UML er benyttet som informasjonsmodelleringsspråk.
+Informasjonsmodellene kan for eksempel dokumentere hvilke objekttyper som inngår i en fagmodell,
+samt egenskaper som beskriver objekttypene og forhold mellom objekttypene.
+Se også: <a href="https://en.wikipedia.org/wiki/Information_model">https://en.wikipedia.org/wiki/Information_model</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org404e20f" class="outline-2">
+<h2 id="org404e20f">Inspire</h2>
+<div class="outline-text-2" id="text-org404e20f">
+<p>
+INSPIRE skal sikre tilgang til offentlig forvaltet geografisk informasjon (geodata), bl.a. om natur, samferdsel, bebyggelse, befolknings- og miljøforhold. INSPIRE fokuserer på behovene innenfor miljøpolitikken, men vil også ha betydning for andre sektorer. INSPIRE skal gjennomføres trinnvis 2009-2020.
+Se også:
+</p>
+<ul class="org-ul">
+<li><a href="https://knowledge-base.inspire.ec.europa.eu/index_en">https://knowledge-base.inspire.ec.europa.eu/index_en</a></li>
+<li><a href="https://www.regjeringen.no/no/sub/eos-notatbasen/notatene/2004/nov/inspire-direktivet/id2434417/">https://www.regjeringen.no/no/sub/eos-notatbasen/notatene/2004/nov/inspire-direktivet/id2434417/</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5a12b08" class="outline-2">
+<h2 id="org5a12b08">ISO</h2>
+<div class="outline-text-2" id="text-org5a12b08">
+<p>
+International Organization for Standardization	<a href="https://www.iso.org/about-us.html">https://www.iso.org/about-us.html</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8388f7b" class="outline-2">
+<h2 id="org8388f7b">Konkurransegrunnlag</h2>
+<div class="outline-text-2" id="text-org8388f7b">
+<p>
+Konkurransegrunnlag beskriver hva som skal utarbeides og leveres når oppdrag utføres for Statens vegvesen.
+Konkurransegrunnlaget skal spesifisere ytelsen og konkurransevilkårene på en slik måte at leverandørene kan levere inn sine beste løsningsforslag på behovene.
+Det er utarbeidet maler for konkurransegrunnlag i Statens vegvesen.
+Konkurransegrunnlagene skal avgrense hvilken dokumentasjon som skal produeres og leveres som del av prosjektet. 
+</p>
+
+<p>
+Se også:
+<a href="https://anskaffelser.no/anskaffelsesprosess/anskaffelsesprosessen-steg-steg/avklare-behov-og-forberede-konkurransen/konkurransegrunnlag">https://anskaffelser.no/anskaffelsesprosess/anskaffelsesprosessen-steg-steg/avklare-behov-og-forberede-konkurransen/konkurransegrunnlag</a>
+<a href="https://www.vegvesen.no/fag/veg-og-gate/konkurranser-og-kontraktsdokumenter/kontraktsmaler/">https://www.vegvesen.no/fag/veg-og-gate/konkurranser-og-kontraktsdokumenter/kontraktsmaler/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0f8ab4a" class="outline-2">
+<h2 id="org0f8ab4a">Kvalitet</h2>
+<div class="outline-text-2" id="text-org0f8ab4a">
+<p>
+R110 benytter to kvalitetskriterier:
+</p>
+<ul class="org-ul">
+<li>Stedfestingsnøyaktighet</li>
+</ul>
+<p>
+Hvor godt stedfesting til en komponent samsvarer med virkelighet eller fasit. 
+</p>
+
+<ul class="org-ul">
+<li>Dekningsgrad</li>
+</ul>
+<p>
+Beskriver hvor stor del av inngrepssonen eller visualiseringssonen som dekkes av en dokumentasjonstype
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf159e82" class="outline-2">
+<h2 id="orgf159e82">Landmåling</h2>
+<div class="outline-text-2" id="text-orgf159e82">
+<p>
+Landmåling er oppmåling av terreng og andre objekter med et instrument, med tilhørende beregning i et plant kart.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org99a0cdf" class="outline-2">
+<h2 id="org99a0cdf">LIDAR</h2>
+<div class="outline-text-2" id="text-org99a0cdf">
+<p>
+Light detection and ranging (LIDAR) er en fjernmålingsteknikk benyttet i flybåren laserskanning, med tilhørende standard format for lagring av registrerte data. Data fra LIDAR skanning lagres normalt på LAS-format.
+</p>
+
+<p>
+Se også: <a href="https://snl.no/lidar">https://snl.no/lidar</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org16de553" class="outline-2">
+<h2 id="org16de553">Maskinstyringsdata</h2>
+<div class="outline-text-2" id="text-org16de553">
+<p>
+Maskinstyringsdata er et prosjektert datasett som brukes sammen med ulike posisjoneringsmetoder til å styre anleggsmaskiner og utstyr montert på anleggsmaskiner.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge86a693" class="outline-2">
+<h2 id="orge86a693">Matrikkelen</h2>
+<div class="outline-text-2" id="text-orge86a693">
+<p>
+En matrikkel (av latin: matricula = register) er et offentlig register over grunneiendommer (eiendomsregister). Landsdekkende offentlig register over fast eiendom og bruksrettighet
+</p>
+
+<p>
+Se også: <a href="https://snl.no/matrikkel">https://snl.no/matrikkel</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7e6f6a7" class="outline-2">
+<h2 id="org7e6f6a7">Modell</h2>
+<div class="outline-text-2" id="text-org7e6f6a7">
+<p>
+Dokumentasjonstypen "Modell" inneholder objekter beskrevet med 3D-geometri og andre egenskapsdata.
+Kompoenentenes geometribeskrivelse skal være stedfestet i nasjonale koordinatsystemer.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0fc8a0a" class="outline-2">
+<h2 id="org0fc8a0a">Nasjonalt geografisk informasjonssystem (NGIS)</h2>
+<div class="outline-text-2" id="text-org0fc8a0a">
+<p>
+Nasjonalt geografisk informasjonssystem er en forvaltningsplattform der geografiske data blir direkte oppdatert i en sentral database hos Kartverket. 
+Se også: <a href="https://www.kartverket.no/geodataarbeid/ngis">https://www.kartverket.no/geodataarbeid/ngis</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org983bf21" class="outline-2">
+<h2 id="org983bf21">Norge digitalt</h2>
+<div class="outline-text-2" id="text-org983bf21">
+<p>
+Norge digitalt-samarbeidet er et samarbeid mellom virksomheter som har ansvar for å fremskaffe stedfestet informasjon og/eller som er store brukere av slik informasjon.
+Se også: <a href="https://www.geonorge.no/Geodataarbeid/Norge-digitalt/">https://www.geonorge.no/Geodataarbeid/Norge-digitalt/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgae3a918" class="outline-2">
+<h2 id="orgae3a918">Norsk Standard (NS)</h2>
+<div class="outline-text-2" id="text-orgae3a918">
+<p>
+Standarder utarbeidet av Standard Norge.
+Se også: <a href="https://standard.no/standardisering/leveranser/norsk-standard/">https://standard.no/standardisering/leveranser/norsk-standard/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7d284f6" class="outline-2">
+<h2 id="org7d284f6">NVDB</h2>
+<div class="outline-text-2" id="text-org7d284f6">
+<p>
+Nasjonal vegdatabank (NVDB) er en database med informasjon om statlige, kommunale, private, fylkes- og skogsbilveger.
+</p>
+
+<p>
+Se også: <a href="https://www.vegvesen.no/fag/teknologi/nasjonal-vegdatabank/">https://www.vegvesen.no/fag/teknologi/nasjonal-vegdatabank/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcbdfbd4" class="outline-2">
+<h2 id="orgcbdfbd4">Objektsamling</h2>
+<div class="outline-text-2" id="text-orgcbdfbd4">
+<p>
+En samling av objekter definert med navn og egenskapsdata.
+Eksempel: Objektsamling “Vegkropp” består av objektsamlingene:
+</p>
+<ul class="org-ul">
+<li>Overbygning med 7 objekttyper.</li>
+<li>Underbygning med 3 objekttyper.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6eb503f" class="outline-2">
+<h2 id="org6eb503f">Objekttype</h2>
+<div class="outline-text-2" id="text-org6eb503f">
+<p>
+Objekttyper defineres med navn og egenskapsdata.
+Eksempel: Objekttypen “Slitelag” inngår i objektsamlingen “Overbygning”.
+Alle komponenter som inngår i modeller kan ha egenskapsdata som beskriver dem.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgce51936" class="outline-2">
+<h2 id="orgce51936">OGC</h2>
+<div class="outline-text-2" id="text-orgce51936">
+<p>
+Open Geospatioal Consortium	<a href="https://www.ogc.org/about-ogc/">https://www.ogc.org/about-ogc/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbf825db" class="outline-2">
+<h2 id="orgbf825db">OMG</h2>
+<div class="outline-text-2" id="text-orgbf825db">
+<p>
+Object management group	<a href="https://www.omg.org/">https://www.omg.org/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org09994b8" class="outline-2">
+<h2 id="org09994b8">Ortofoto</h2>
+<div class="outline-text-2" id="text-org09994b8">
+<p>
+Et ortofoto er et fotografi tatt fra fly eller satellitt. Bildet er georeferert.
+</p>
+
+<p>
+Se også: <a href="https://snl.no/ortofoto">https://snl.no/ortofoto</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0d4c95c" class="outline-2">
+<h2 id="org0d4c95c">Overheng</h2>
+<div class="outline-text-2" id="text-org0d4c95c">
+<p>
+Terrengoverflate som i et gitt punkt har mer enn en høyde. Finnes ofte i forbindelse med bratt fjellterreng.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org56dba5b" class="outline-2">
+<h2 id="org56dba5b">Produktbibliotek</h2>
+<div class="outline-text-2" id="text-org56dba5b">
+<p>
+Samling av ferdig prosjekterte 3D modeller for en produktkategori. For eksempel bibliotek for VA-kummer eller for lysmaster.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5421035" class="outline-2">
+<h2 id="org5421035">PROF</h2>
+<div class="outline-text-2" id="text-org5421035">
+<p>
+Var tidligere Statens vegvesens prosjekteringsveileder. Ble erstattet av V770 Modellgrunnlag i 2012.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org00396c2" class="outline-2">
+<h2 id="org00396c2">Prosjektering</h2>
+<div class="outline-text-2" id="text-org00396c2">
+<p>
+Planlegge, analysere og utarbeide funksjonelle og tekniske løsninger som grunnlag for arealplaner og den fysiske utførelsen.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge28d8e6" class="outline-2">
+<h2 id="orge28d8e6">Prosjektets koordinatsystem</h2>
+<div class="outline-text-2" id="text-orge28d8e6">
+<p>
+Et vegprosjekt skal ha et felles koordinatsystem som dekker prosjektområdet i grunnriss og høyde, her kalt "prosjektets koordinatsystem".
+-I R110 kalles koordinatsystemers akser: X, Y og Z.
+</p>
+<ul class="org-ul">
+<li>I andre sammenhenger benyttes N, E og H der:
+<ul class="org-ul">
+<li>N = Y</li>
+<li>E = X</li>
+<li>H = Z</li>
+</ul></li>
+</ul>
+<p>
+Se også: <a href="https://www.kartverket.no/til-lands/posisjon/kartprojeksjonar">https://www.kartverket.no/til-lands/posisjon/kartprojeksjonar</a>
+</p>
+</div>
+
+
+<div id="outline-container-orgf7ee455" class="outline-3">
+<h3 id="orgf7ee455">Koordinatsystem - grunnriss</h3>
+<div class="outline-text-3" id="text-orgf7ee455">
+<p>
+Grunnriss tilsvarer planet definert av X- og Y-aksen.
+For grunnriss skal følgende benyttes:
+</p>
+<ul class="org-ul">
+<li>Referanseramme: EUREF89.</li>
+<li>Kartprojeksjon: NTM.</li>
+<li><a href="https://www.kartverket.no/globalassets/til-lands/euref89_ntm_beskrivelse.pdf">Sone</a> i kartprojeksjonen:
+<ul class="org-ul">
+<li>Én sone mellom 5 og 30 skal benyttes for hele vegprosjektet.</li>
+<li>Sonen som best dekker prosjektets inngrepssone skal benyttes.</li>
+<li>Ved kryssing av en eller flere soner i et prosjekt, skal det vurderes om det er nødvendig med tiltak for å ivareta kvalitetskrav</li>
+</ul></li>
+</ul>
+</div>
+
+<div id="outline-container-orgba63d98" class="outline-4">
+<h4 id="orgba63d98">Koordinatsystem-Kartprosjeksjon</h4>
+<div class="outline-text-4" id="text-orgba63d98">
+<p>
+Kartprojeksjon er en matematisk metode for overføring av et område på en dobbeltkrum flate til et plan etter bestemte regler.
+Se også:
+<a href="https://www.kartverket.no/til-lands/posisjon/kartprojeksjonar">https://www.kartverket.no/til-lands/posisjon/kartprojeksjonar</a>
+<a href="https://snl.no/kartprojeksjon">https://snl.no/kartprojeksjon</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org508a335" class="outline-4">
+<h4 id="org508a335">Koordinatsystem - referanseramme</h4>
+<div class="outline-text-4" id="text-org508a335">
+<p>
+Geodetiske referanserammer ligg til grunn for all geografisk informasjon; for kart, posisjonering, jordobservasjon og måling av klimaendringar. 
+Se også: <a href="https://www.kartverket.no/til-lands/posisjon/referanserammer-for-noreg">https://www.kartverket.no/til-lands/posisjon/referanserammer-for-noreg</a>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5aaca92" class="outline-3">
+<h3 id="org5aaca92">Koordinatsystem - høyde</h3>
+<div class="outline-text-3" id="text-org5aaca92">
+<p>
+For høyde (Z) skal høydesystem NN2000 benyttes
+Se også: <a href="https://www.kartverket.no/til-sjos/se-havniva/referanseniva/hva-er-et-referanseniva">https://www.kartverket.no/til-sjos/se-havniva/referanseniva/hva-er-et-referanseniva</a>
+</p>
+</div>
+
+
+<div id="outline-container-org1a8c85f" class="outline-4">
+<h4 id="org1a8c85f">Koordinatsystem - høydesystem</h4>
+<div class="outline-text-4" id="text-org1a8c85f">
+<p>
+Vertikal referanseramme/høydegrunnlag. 
+Se også:
+<a href="https://www.kartverket.no/til-sjos/se-havniva/referanseniva/hva-er-et-referanseniva">https://www.kartverket.no/til-sjos/se-havniva/referanseniva/hva-er-et-referanseniva</a>
+<a href="https://www.kartverket.no/til-lands/posisjon/ta-i-bruk-nn2000">https://www.kartverket.no/til-lands/posisjon/ta-i-bruk-nn2000</a>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org72a6b96" class="outline-3">
+<h3 id="org72a6b96">Koordinatsystem - transformasjon</h3>
+<div class="outline-text-3" id="text-org72a6b96">
+<p>
+Tilpasning av punkters koordinater i ett koordinatsystem med et gitt datum, til deres tilsvarende koordinater i et koordinatsystem med et annet datum.
+Tilpasningen kan inneholde elementer av ren translasjon, rotasjon og målestokksendring.
+Se også: <a href="https://www.kartverket.no/til-lands/posisjon/transformere-koordinater">https://www.kartverket.no/til-lands/posisjon/transformere-koordinater</a>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org70e4574" class="outline-2">
+<h2 id="org70e4574">Prosjektområde</h2>
+<div class="outline-text-2" id="text-org70e4574">
+<p>
+For hvert vegprosjekt og hver prosjektfase skal det opprettes et prosjektområde med geografisk avgrensning av to soner:
+</p>
+<ul class="org-ul">
+<li>Inngrepssone</li>
+<li>Visualiseringssone</li>
+</ul>
+</div>
+
+<div id="outline-container-org49721cf" class="outline-3">
+<h3 id="org49721cf">Prosjektområde - inngrepssone</h3>
+<div class="outline-text-3" id="text-org49721cf">
+<p>
+Planlagte fysiske inngrep skal prosjekteres i inngrepssonen, og sonens størrelse og kvalitetskrav må tilpasses formål i prosjektet. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org14ef764" class="outline-3">
+<h3 id="org14ef764">Prosjektområde - visualiseringssone</h3>
+<div class="outline-text-3" id="text-org14ef764">
+<p>
+Visualiseringssonens størrelse og kvalitetskrav skal tilpasses formål i prosjektet. 
+Visualiseringssone kan benyttes til analyser og visualisering, for eksempel:
+</p>
+
+<ul class="org-ul">
+<li>Vegen i landskapet.</li>
+<li>Støyforhold.</li>
+<li>Overvann.</li>
+<li>Skredfare.</li>
+<li>Alternative vegkorridorer.</li>
+<li>Influensområder for alle fagtema definert i V712 Konsekvensanalyser.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7135d0b" class="outline-2">
+<h2 id="org7135d0b">Registrering</h2>
+<div class="outline-text-2" id="text-org7135d0b">
+<p>
+"Registrering" er i R110 en samlebetegnelse på metoder som benyttes for å hente informasjon om eksisterende- eller utført situasjon i prosjektområdet.
+</p>
+<ul class="org-ul">
+<li>Registrering betegner metoder som benyttes for å dokumentere:
+<ul class="org-ul">
+<li>Objekters form og plassering.</li>
+<li>Øvrige egenskaper som beskriver objekter eller tilstander.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0710f75" class="outline-2">
+<h2 id="org0710f75">Registrerte data:</h2>
+<div class="outline-text-2" id="text-org0710f75">
+<p>
+Data som er registrert av- eller til et vegprosjekt.
+</p>
+</div>
+</div>
+<div id="outline-container-org8caa72a" class="outline-2">
+<h2 id="org8caa72a">Resultatdata:</h2>
+<div class="outline-text-2" id="text-org8caa72a">
+<p>
+Data utarbeidet med utgangspunkt i modeller.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1db16ac" class="outline-2">
+<h2 id="org1db16ac">Sentral felles kartbase (SFKB)</h2>
+<div class="outline-text-2" id="text-org1db16ac">
+<p>
+Forvaltningssystem for kartdata.
+Se også: <a href="https://www.kartverket.no/geodataarbeid/sfkb">https://www.kartverket.no/geodataarbeid/sfkb</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf5da6a8" class="outline-2">
+<h2 id="orgf5da6a8">SOSI</h2>
+<div class="outline-text-2" id="text-orgf5da6a8">
+<p>
+SOSI (Samordnet Opplegg for Stedfestet Informasjon) er den største nasjonale standarden for geografisk informasjon.
+Se også: <a href="https://register.geonorge.no/register/sosi-standarden">https://register.geonorge.no/register/sosi-standarden</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge191ef7" class="outline-2">
+<h2 id="orge191ef7">Stedfestet informasjon</h2>
+<div class="outline-text-2" id="text-orge191ef7">
+<p>
+Stedfestet informasjon beskriver objekter, hendelser og forhold der posisjon, stedet på jorda, er en vesentlig del av informasjonen.
+Objekter er definert med navn og egenskapsdata.
+Egenskapsdata kan beskrive objekters form, materialtype, posisjon og andre forhold.
+Objekters form og plassering beskrives med prosjektert eller registrert geometri.
+Geometrien refereres i nasjonale koordinatsystem, slik at objekter kan plasseres i- eller gjenfinnes i terrenget.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf42c471" class="outline-2">
+<h2 id="orgf42c471">Stikningsdata</h2>
+<div class="outline-text-2" id="text-orgf42c471">
+<p>
+Stikningsdata er et prosjektert datasett som benyttes til å plassere og orientere komponenter i terrenget med totalstasjon eller annet landmålingsutstyr.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfc2609c" class="outline-2">
+<h2 id="orgfc2609c">Tegning</h2>
+<div class="outline-text-2" id="text-orgfc2609c">
+<p>
+Tegninger er dokumenter på PDF-format. Tegninger kan produseres/prosjekteres med utgangspunkt i modelldata. Tegninger kan vise øyeblikksbilder av ett eller flere fagtema i et vegprosjekt. Tegninger kan vise standardløsninger/fagtema det ikke vurderes hensiktsmessig å modellere.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0382713" class="outline-2">
+<h2 id="org0382713">Terrengarbeid</h2>
+<div class="outline-text-2" id="text-org0382713">
+<p>
+Arbeid som innebærer endring av eksisterende terreng ved f. eks graving, sprengning, boring mm.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org87ac16a" class="outline-2">
+<h2 id="org87ac16a">Terrengarbeid - teoretiske mengder</h2>
+<div class="outline-text-2" id="text-org87ac16a">
+<p>
+Mengder beregnet fra grunnlagsdata og prosjekterte data.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org95386d8" class="outline-2">
+<h2 id="org95386d8">Terrengarbeid - utførte mengder</h2>
+<div class="outline-text-2" id="text-org95386d8">
+<p>
+Mengder beregnet fra registreringer på anlegg.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org61304e1" class="outline-2">
+<h2 id="org61304e1">Toleranse</h2>
+<div class="outline-text-2" id="text-org61304e1">
+<p>
+I byggefasen: Krav til entreprenørens utførelse/plassering av et objekt i forhold til regelverk eller prosjektert geometri.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0f9bcd1" class="outline-2">
+<h2 id="org0f9bcd1">UML</h2>
+<div class="outline-text-2" id="text-org0f9bcd1">
+<p>
+Forkortelse for Unified Modeling Language, et konseptuelt skjemaspråk som benyttes til informasjonsmodellering.
+UML-diagrammer kan definere og beskrive innhold i dokumentasjonstyper på en standardisert måte.
+Se også: <a href="https://no.wikipedia.org/wiki/Unified_Modeling_Language">https://no.wikipedia.org/wiki/Unified_Modeling_Language</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5911e33" class="outline-2">
+<h2 id="org5911e33">VegLCA</h2>
+<div class="outline-text-2" id="text-org5911e33">
+<p>
+Alle prosjekter over 51 millioner kroner må bruke VegLCA til å beregne klimagassutslipp.
+</p>
+
+<p>
+Se også: <a href="https://www.vegvesen.no/fag/fokusomrader/klima-miljo-og-omgivelser/utslipp-av-klimagasser/klimagassreduksjoner-i-anlegg-drift-og-vedlikehold/">https://www.vegvesen.no/fag/fokusomrader/klima-miljo-og-omgivelser/utslipp-av-klimagasser/klimagassreduksjoner-i-anlegg-drift-og-vedlikehold/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb8fa74a" class="outline-2">
+<h2 id="orgb8fa74a">Vegprosjekt</h2>
+<div class="outline-text-2" id="text-orgb8fa74a">
+<p>
+Et vegprosjekt er et tiltak innenfor et geografisk avgrenset prosjektområde
+Et vegprosjekt vil normalt omfatte flere faser for planlegging og utførelse
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7a097b2" class="outline-2">
+<h2 id="org7a097b2">Vegprosjekt - prosjektfaser</h2>
+<div class="outline-text-2" id="text-org7a097b2">
+<p>
+Samlebetegnelse på fasene som kan inngå i et vegprosjekt:
+Utredning, kommunedelplan, reguleringsplan, konkurransegrunnlag for entreprise og bygging.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0f0aa15" class="outline-2">
+<h2 id="org0f0aa15">XML</h2>
+<div class="outline-text-2" id="text-org0f0aa15">
+<p>
+Extensible Markup Language	<a href="https://no.wikipedia.org/wiki/XML">https://no.wikipedia.org/wiki/XML</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1e252a3" class="outline-2">
+<h2 id="org1e252a3">XSD-skjema</h2>
+<div class="outline-text-2" id="text-org1e252a3">
+<p>
+Extensible Markup Language (XML) Schema Definition	<a href="https://no.wikipedia.org/wiki/XML_Schema">https://no.wikipedia.org/wiki/XML_Schema</a>
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2025-03-12 ons. 15:01</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
