@@ -565,27 +565,27 @@ $SKPOLY
   9
 $TDCREATE
  40
-2460661.565254630
+2460769.636076389
   9
 $TDUCREATE
  40
-2460661.523587963
+2460769.552743056
   9
 $TDUPDATE
  40
-2460667.515671297
+2460769.642175926
   9
 $TDUUPDATE
  40
-2460667.474004630
+2460769.558842593
   9
 $TDINDWG
  40
-0.0004629630
+0.0060995370
   9
 $TDUSRTIMER
  40
-0.0004629630
+0.0060995370
   9
 $USRTIMER
  70
@@ -625,7 +625,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-12A4
+1283
   9
 $SURFTAB1
  70
@@ -1005,11 +1005,11 @@ $PSTYLEMODE
   9
 $FINGERPRINTGUID
   2
-{DC3832CF-5770-3A4F-B93E-90A585E74846}
+{E3950179-0ACD-0C47-9DAD-21CFED304570}
   9
 $VERSIONGUID
   2
-{0475F8B9-6ECE-1447-A516-C5F27629DB6F}
+{55C994D0-70A4-F448-87BE-F0BF86535BB0}
   9
 $EXTNAMES
 290
@@ -10109,6 +10109,22 @@ AcGeoLocationUI
 281
      0
   0
+CLASS
+  1
+PLOTSETTINGS
+  2
+AcDbPlotSettings
+  3
+ObjectDBX Classes
+ 90
+        0
+ 91
+        1
+280
+     0
+281
+     0
+  0
 ENDSEC
   0
 SECTION
@@ -10177,9 +10193,9 @@ AcDbViewportTableRecord
  37
 0.0
  40
-21552.59981362221
+21552.65071739732
  41
-3.839393939393939
+2.186367558239862
  42
 50.0
  43
@@ -15185,7 +15201,7 @@ LAYER
 100
 AcDbSymbolTable
  70
-    96
+    94
   0
 LAYER
   5
@@ -15249,7 +15265,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_LedningElement
+VAElementsamling_VAElement_LedningElement_
   0
 LAYER
   5
@@ -15281,7 +15297,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_LedningElement
+VAElementsamling_VAElement_LedningElement_
   0
 LAYER
   5
@@ -15293,7 +15309,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Avloepsledning
+Avløpsledning
  70
      0
  62
@@ -15313,7 +15329,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_LedningElement
+VAElementsamling_VAElement_LedningElement_
   0
 LAYER
   5
@@ -15345,7 +15361,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_LedningElement
+VAElementsamling_VAElement_LedningElement_
   0
 LAYER
   5
@@ -15377,7 +15393,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement
+VAElementsamling_VAElement_KoblingElement_
   0
 LAYER
   5
@@ -15409,7 +15425,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement
+VAElementsamling_VAElement_KoblingElement_
   0
 LAYER
   5
@@ -15421,7 +15437,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-UtloepUtslipp
+UtløpUtslipp
  70
      0
  62
@@ -15441,7 +15457,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement
+VAElementsamling_VAElement_KoblingElement_
   0
 LAYER
   5
@@ -15473,39 +15489,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement
-  0
-LAYER
-  5
-121C
-330
-2
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-Kum
- 70
-     0
- 62
-     7
-  6
-Continuous
-370
-    18
-390
-F
-347
-EE
-348
-0
-1001
-AcAecLayerStandard
-1000
-
-1000
-VAElementsamling_VAElement_KoblingElement
+VAElementsamling_VAElement_KoblingElement_
   0
 LAYER
   5
@@ -15537,7 +15521,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement
+VAElementsamling_VAElement_KoblingElement_
   0
 LAYER
   5
@@ -15569,7 +15553,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement
+VAElementsamling_VAElement_KoblingElement_
   0
 LAYER
   5
@@ -15581,7 +15565,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Maalestasjon
+Målestasjon
  70
      0
  62
@@ -15601,7 +15585,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement_Nettstasjon
+VAElementsamling_VAElement_KoblingElement_Nettstasjon_
   0
 LAYER
   5
@@ -15633,7 +15617,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement_Nettstasjon
+VAElementsamling_VAElement_KoblingElement_Nettstasjon_
   0
 LAYER
   5
@@ -15665,7 +15649,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement_Nettstasjon
+VAElementsamling_VAElement_KoblingElement_Nettstasjon_
   0
 LAYER
   5
@@ -15677,7 +15661,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-HoydebassengTaarn
+HøydebassengTårn
  70
      0
  62
@@ -15729,7 +15713,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamlingVAElement_KoblingElement_Nettstasjon_Basseng
+VAElementsamling_VAElement_KoblingElement_Nettstasjon_Basseng
   0
 LAYER
   5
@@ -15761,7 +15745,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamlingVAElement_KoblingElement_Nettstasjon_Basseng
+VAElementsamling_VAElement_KoblingElement_Nettstasjon_Basseng
   0
 LAYER
   5
@@ -15773,7 +15757,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Paaslippskum
+Påslippskum
  70
      0
  62
@@ -15793,7 +15777,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement_Nettstasjon
+VAElementsamling_VAElement_KoblingElement_Nettstasjon_
   0
 LAYER
   5
@@ -15825,7 +15809,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement_Nettstasjon
+VAElementsamling_VAElement_KoblingElement_Nettstasjon_
   0
 LAYER
   5
@@ -15857,7 +15841,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement_Nettstasjon_Overloepstasjon
+VAElementsamling_VAElement_KoblingElement_Nettstasjon_Overløpstasjon
   0
 LAYER
   5
@@ -15889,7 +15873,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamlingVAElement_KoblingElement_Nettstasjon_Overloepstasjon
+VAElementsamling_VAElement_KoblingElement_Nettstasjon_Overløpstasjon
   0
 LAYER
   5
@@ -15921,7 +15905,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamlingVAElement_KoblingElement_Nettstasjon_Overloepstasjon
+VAElementsamling_VAElement_KoblingElement_Nettstasjon_Overløpstasjon
   0
 LAYER
   5
@@ -15953,7 +15937,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamlingVAElement_KoblingElement_Nettstasjon_Overloepstasjon
+VAElementsamling_VAElement_KoblingElement_Nettstasjon_Overløpstasjon
   0
 LAYER
   5
@@ -15985,7 +15969,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement_Nettstasjon
+VAElementsamling_VAElement_KoblingElement_Nettstasjon_
   0
 LAYER
   5
@@ -16017,7 +16001,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement_Nettstasjon
+VAElementsamling_VAElement_KoblingElement_Nettstasjon_
   0
 LAYER
   5
@@ -16049,7 +16033,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement_Nettstasjon
+VAElementsamling_VAElement_KoblingElement_Nettstasjon_
   0
 LAYER
   5
@@ -16081,7 +16065,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement_Nettstasjon
+VAElementsamling_VAElement_KoblingElement_Nettstasjon_
   0
 LAYER
   5
@@ -16093,7 +16077,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Tverroverloep
+HøySideOverløp
  70
      0
  62
@@ -16113,7 +16097,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement_Prosess_Overloep
+VAElementsamling_VAElement_KoblingElement_Prosess_Overløp
   0
 LAYER
   5
@@ -16125,7 +16109,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-HoeySideOverloep
+Trykkmåler
  70
      0
  62
@@ -16145,7 +16129,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement_Prosess_Overloep
+VAElementsamling_VAElement_KoblingElement_Prosess_Målertype
   0
 LAYER
   5
@@ -16157,7 +16141,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-HvirvelOverloep
+Mengdemåler
  70
      0
  62
@@ -16177,7 +16161,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement_Prosess_Overloep
+VAElementsamling_VAElement_KoblingElement_Prosess_Målertype
   0
 LAYER
   5
@@ -16189,7 +16173,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Trykkmaaler
+Nivåmåler
  70
      0
  62
@@ -16209,7 +16193,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement_Prosess_Maalertype
+VAElementsamling_VAElement_KoblingElement_Prosess_Målertype
   0
 LAYER
   5
@@ -16221,7 +16205,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Mengdemaaler
+Temperaturmåler
  70
      0
  62
@@ -16241,7 +16225,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement_Prosess_Maalertype
+VAElementsamling_VAElement_KoblingElement_Prosess_Målertype
   0
 LAYER
   5
@@ -16253,7 +16237,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Nivaamaaler
+Klorrestmåler
  70
      0
  62
@@ -16273,7 +16257,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement_Prosess_Maalertype
+VAElementsamling_VAElement_KoblingElement_Prosess_Målertype
   0
 LAYER
   5
@@ -16285,7 +16269,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Temperaturmaaler
+AnnenMålertype
  70
      0
  62
@@ -16305,7 +16289,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement_Prosess_Maalertype
+VAElementsamling_VAElement_KoblingElement_Prosess_Målertype
   0
 LAYER
   5
@@ -16317,7 +16301,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Klorrestmaaler
+Målerenne
  70
      0
  62
@@ -16337,75 +16321,11 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement_Prosess_Maalertype
+VAElementsamling_VAElement_KoblingElement_Prosess_Målertype
   0
 LAYER
   5
 1237
-330
-2
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-AnnenMaalertype
- 70
-     0
- 62
-     7
-  6
-Continuous
-370
-    18
-390
-F
-347
-EE
-348
-0
-1001
-AcAecLayerStandard
-1000
-
-1000
-VAElementsamling_VAElement_KoblingElement_Prosess_Maalertype
-  0
-LAYER
-  5
-1238
-330
-2
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-Maalerenne
- 70
-     0
- 62
-     7
-  6
-Continuous
-370
-    18
-390
-F
-347
-EE
-348
-0
-1001
-AcAecLayerStandard
-1000
-
-1000
-VAElementsamling_VAElement_KoblingElement_Prosess_Maalertype
-  0
-LAYER
-  5
-1239
 330
 2
 100
@@ -16433,11 +16353,11 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement_Prosess_Maalertype
+VAElementsamling_VAElement_KoblingElement_Prosess_Målertype
   0
 LAYER
   5
-123A
+1238
 330
 2
 100
@@ -16445,7 +16365,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-SirkulasjonspumpeVaatløper
+SirkulasjonspumpeVåtløper
  70
      0
  62
@@ -16469,7 +16389,7 @@ VAElementsamling_VAElement_KoblingElement_Prosess_Pumper
   0
 LAYER
   5
-123B
+1239
 330
 2
 100
@@ -16501,7 +16421,7 @@ VAElementsamling_VAElement_KoblingElement_Prosess_Pumper
   0
 LAYER
   5
-123C
+123A
 330
 2
 100
@@ -16533,7 +16453,7 @@ VAElementsamling_VAElement_KoblingElement_Prosess_Pumper
   0
 LAYER
   5
-123D
+123B
 330
 2
 100
@@ -16565,7 +16485,7 @@ VAElementsamling_VAElement_KoblingElement_Prosess_Pumper
   0
 LAYER
   5
-123E
+123C
 330
 2
 100
@@ -16597,7 +16517,7 @@ VAElementsamling_VAElement_KoblingElement_Prosess_Pumper
   0
 LAYER
   5
-123F
+123D
 330
 2
 100
@@ -16629,7 +16549,7 @@ VAElementsamling_VAElement_KoblingElement_Prosess_Pumper
   0
 LAYER
   5
-1240
+123E
 330
 2
 100
@@ -16661,7 +16581,7 @@ VAElementsamling_VAElement_KoblingElement_Prosess_Pumper
   0
 LAYER
   5
-1241
+123F
 330
 2
 100
@@ -16693,7 +16613,7 @@ VAElementsamling_VAElement_KoblingElement_Prosess_Pumper
   0
 LAYER
   5
-1242
+1240
 330
 2
 100
@@ -16725,7 +16645,7 @@ VAElementsamling_VAElement_KoblingElement_Prosess_Pumper
   0
 LAYER
   5
-1243
+1241
 330
 2
 100
@@ -16757,7 +16677,7 @@ VAElementsamling_VAElement_KoblingElement_Prosess_Pumper
   0
 LAYER
   5
-1244
+1242
 330
 2
 100
@@ -16789,7 +16709,7 @@ VAElementsamling_VAElement_KoblingElement_Prosess_Pumper
   0
 LAYER
   5
-1245
+1243
 330
 2
 100
@@ -16817,11 +16737,11 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement_Prosess
+VAElementsamling_VAElement_KoblingElement_Prosess_
   0
 LAYER
   5
-1246
+1244
 330
 2
 100
@@ -16853,7 +16773,7 @@ VAElementsamling_VAElement_KoblingElement_Prosess_Enhetsoperasjon
   0
 LAYER
   5
-1247
+1245
 330
 2
 100
@@ -16885,7 +16805,7 @@ VAElementsamling_VAElement_KoblingElement_Prosess_Enhetsoperasjon
   0
 LAYER
   5
-1248
+1246
 330
 2
 100
@@ -16917,7 +16837,7 @@ VAElementsamling_VAElement_KoblingElement_Prosess_Enhetsoperasjon
   0
 LAYER
   5
-1249
+1247
 330
 2
 100
@@ -16949,7 +16869,7 @@ VAElementsamling_VAElement_KoblingElement_Prosess_Enhetsoperasjon
   0
 LAYER
   5
-124A
+1248
 330
 2
 100
@@ -16981,7 +16901,7 @@ VAElementsamling_VAElement_KoblingElement_Prosess_Enhetsoperasjon
   0
 LAYER
   5
-124B
+1249
 330
 2
 100
@@ -17013,7 +16933,7 @@ VAElementsamling_VAElement_KoblingElement_Prosess_Enhetsoperasjon
   0
 LAYER
   5
-124C
+124A
 330
 2
 100
@@ -17045,7 +16965,7 @@ VAElementsamling_VAElement_KoblingElement_Prosess_Enhetsoperasjon
   0
 LAYER
   5
-124D
+124B
 330
 2
 100
@@ -17077,7 +16997,7 @@ VAElementsamling_VAElement_KoblingElement_Prosess_Enhetsoperasjon
   0
 LAYER
   5
-124E
+124C
 330
 2
 100
@@ -17109,7 +17029,7 @@ VAElementsamling_VAElement_KoblingElement_Prosess_Enhetsoperasjon
   0
 LAYER
   5
-124F
+124D
 330
 2
 100
@@ -17141,7 +17061,7 @@ VAElementsamling_VAElement_KoblingElement_Prosess_Enhetsoperasjon
   0
 LAYER
   5
-1250
+124E
 330
 2
 100
@@ -17173,7 +17093,7 @@ VAElementsamling_VAElement_KoblingElement_Prosess_Enhetsoperasjon
   0
 LAYER
   5
-1251
+124F
 330
 2
 100
@@ -17205,7 +17125,7 @@ VAElementsamling_VAElement_KoblingElement_Prosess_Enhetsoperasjon
   0
 LAYER
   5
-1252
+1250
 330
 2
 100
@@ -17237,39 +17157,7 @@ VAElementsamling_VAElement_KoblingElement_Prosess_Enhetsoperasjon
   0
 LAYER
   5
-1253
-330
-2
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-Rist
- 70
-     0
- 62
-     7
-  6
-Continuous
-370
-    18
-390
-F
-347
-EE
-348
-0
-1001
-AcAecLayerStandard
-1000
-
-1000
-VAElementsamling_VAElement_KoblingElement_Prosess_Enhetsoperasjon
-  0
-LAYER
-  5
-1254
+1252
 330
 2
 100
@@ -17301,7 +17189,7 @@ VAElementsamling_VAElement_KoblingElement_Prosess_Enhetsoperasjon
   0
 LAYER
   5
-1255
+1253
 330
 2
 100
@@ -17333,7 +17221,7 @@ VAElementsamling_VAElement_KoblingElement_Prosess_Enhetsoperasjon
   0
 LAYER
   5
-1256
+1254
 330
 2
 100
@@ -17365,7 +17253,7 @@ VAElementsamling_VAElement_KoblingElement_Prosess_Enhetsoperasjon
   0
 LAYER
   5
-1257
+1255
 330
 2
 100
@@ -17397,7 +17285,7 @@ VAElementsamling_VAElement_KoblingElement_Prosess_Enhetsoperasjon
   0
 LAYER
   5
-1258
+1256
 330
 2
 100
@@ -17425,11 +17313,11 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement_Roerdel
+VAElementsamling_VAElement_KoblingElement_Rørdel_
   0
 LAYER
   5
-1259
+1257
 330
 2
 100
@@ -17457,11 +17345,11 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement_Roerdel
+VAElementsamling_VAElement_KoblingElement_Rørdel_
   0
 LAYER
   5
-125A
+1258
 330
 2
 100
@@ -17469,7 +17357,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Grenroer
+Grenrør
  70
      0
  62
@@ -17489,11 +17377,11 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement_Roerdel
+VAElementsamling_VAElement_KoblingElement_Rørdel_
   0
 LAYER
   5
-125B
+1259
 330
 2
 100
@@ -17521,11 +17409,11 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement_Roerdel
+VAElementsamling_VAElement_KoblingElement_Rørdel_
   0
 LAYER
   5
-125C
+125A
 330
 2
 100
@@ -17553,43 +17441,11 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement_Roerdel
+VAElementsamling_VAElement_KoblingElement_Rørdel_
   0
 LAYER
   5
-125D
-330
-2
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-Overgang
- 70
-     0
- 62
-     7
-  6
-Continuous
-370
-    18
-390
-F
-347
-EE
-348
-0
-1001
-AcAecLayerStandard
-1000
-
-1000
-VAElementsamling_VAElement_KoblingElement_Roerdel
-  0
-LAYER
-  5
-125E
+125C
 330
 2
 100
@@ -17617,11 +17473,11 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement_Roerdel
+VAElementsamling_VAElement_KoblingElement_Rørdel_
   0
 LAYER
   5
-125F
+125D
 330
 2
 100
@@ -17649,11 +17505,11 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement_Roerdel
+VAElementsamling_VAElement_KoblingElement_Rørdel_
   0
 LAYER
   5
-1260
+125E
 330
 2
 100
@@ -17681,11 +17537,11 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement_Roerdel
+VAElementsamling_VAElement_KoblingElement_Rørdel_
   0
 LAYER
   5
-1261
+125F
 330
 2
 100
@@ -17717,7 +17573,7 @@ VAElementsamling_VAElement_KoblingElement_Ventil_Stengeventil
   0
 LAYER
   5
-1262
+1260
 330
 2
 100
@@ -17749,7 +17605,7 @@ VAElementsamling_VAElement_KoblingElement_Ventil_Stengeventil
   0
 LAYER
   5
-1263
+1261
 330
 2
 100
@@ -17781,7 +17637,7 @@ VAElementsamling_VAElement_KoblingElement_Ventil_Stengeventil
   0
 LAYER
   5
-1264
+1262
 330
 2
 100
@@ -17813,7 +17669,7 @@ VAElementsamling_VAElement_KoblingElement_Ventil_Stengeventil
   0
 LAYER
   5
-1265
+1263
 330
 2
 100
@@ -17845,7 +17701,7 @@ VAElementsamling_VAElement_KoblingElement_Ventil_Stengeventil
   0
 LAYER
   5
-1266
+1264
 330
 2
 100
@@ -17877,7 +17733,7 @@ VAElementsamling_VAElement_KoblingElement_Ventil_Stengeventil
   0
 LAYER
   5
-1267
+1265
 330
 2
 100
@@ -17909,7 +17765,7 @@ VAElementsamling_VAElement_KoblingElement_Ventil_Stengeventil
   0
 LAYER
   5
-1268
+1266
 330
 2
 100
@@ -17941,7 +17797,7 @@ VAElementsamling_VAElement_KoblingElement_Ventil_Tilbakeslagsventil
   0
 LAYER
   5
-1269
+1267
 330
 2
 100
@@ -17973,7 +17829,7 @@ VAElementsamling_VAElement_KoblingElement_Ventil_Tilbakeslagsventil
   0
 LAYER
   5
-126A
+1268
 330
 2
 100
@@ -18005,7 +17861,7 @@ VAElementsamling_VAElement_KoblingElement_Ventil_Reguleringsventil
   0
 LAYER
   5
-126B
+1269
 330
 2
 100
@@ -18037,7 +17893,7 @@ VAElementsamling_VAElement_KoblingElement_Ventil_Reguleringsventil
   0
 LAYER
   5
-126C
+126A
 330
 2
 100
@@ -18045,7 +17901,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Flotoerventil
+Flotørventil
  70
      0
  62
@@ -18069,7 +17925,7 @@ VAElementsamling_VAElement_KoblingElement_Ventil_Reguleringsventil
   0
 LAYER
   5
-126D
+126B
 330
 2
 100
@@ -18101,7 +17957,7 @@ VAElementsamling_VAElement_KoblingElement_Ventil_Reguleringsventil
   0
 LAYER
   5
-126E
+126C
 330
 2
 100
@@ -18109,7 +17965,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Roerbruddsventil
+Rørbruddsventil
  70
      0
  62
@@ -18133,7 +17989,7 @@ VAElementsamling_VAElement_KoblingElement_Ventil_Reguleringsventil
   0
 LAYER
   5
-126F
+126D
 330
 2
 100
@@ -18161,11 +18017,11 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement_Ventil
+VAElementsamling_VAElement_KoblingElement_Ventil_
   0
 LAYER
   5
-1270
+126E
 330
 2
 100
@@ -18193,11 +18049,11 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling_VAElement_KoblingElement_Ventil
+VAElementsamling_VAElement_KoblingElement_Ventil_
   0
 LAYER
   5
-1271
+126F
 330
 2
 100
@@ -18205,7 +18061,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Groeft
+Grøft
  70
      0
  62
@@ -18225,11 +18081,11 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling
+VAElementsamling_
   0
 LAYER
   5
-1272
+1270
 330
 2
 100
@@ -18257,7 +18113,7 @@ AcAecLayerStandard
 1000
 
 1000
-VAElementsamling
+VAElementsamling_
   0
 ENDTAB
   0
@@ -21407,7 +21263,7 @@ AcDbEllipse
 220
 0.0
 230
--0.9999999999999998
+-1.0
  40
 0.7071068232896051
  41
@@ -22875,7 +22731,7 @@ AcDbEllipse
 220
 0.0
 230
-1.0
+0.9999999999999998
  40
 0.7071068232896052
  41
@@ -23339,7 +23195,7 @@ EF
   3
 ACDB_RECOMPOSE_DATA
 350
-12A3
+1282
   3
 AcDbVariableDictionary
 350
@@ -23379,7 +23235,7 @@ E60
   3
 AECC_LASTSAVED_APPVERSION
 350
-1297
+127D
   3
 ASE_INDEX_DICTIONARY
 350
@@ -23631,13 +23487,13 @@ AcDbXrecord
 280
      1
 300
-{0475F8B9-6ECE-1447-A516-C5F27629DB6F}
+{55C994D0-70A4-F448-87BE-F0BF86535BB0}
 301
 {3A6C669E-DCFE-4D4E-8BD6-C7AB5287C939}
 302
-{0475F8B9-6ECE-1447-A516-C5F27629DB6F}
+{55C994D0-70A4-F448-87BE-F0BF86535BB0}
 303
-C:\DATA\R110-Git\R110_Maler-for-prosjektering\Lagstruktur\2024_lag_fm-va.DXF
+C:\DATA\R110-Git-admin\Lagstruktur\2024_lag_fm-VA.dxf
 301
 {F28EFAC9-3EFC-2742-AD57-52EED1D6129F}
 302
@@ -24279,7 +24135,7 @@ X-Ray
   0
 XRECORD
   5
-12A3
+1282
 102
 {ACAD_REACTORS
 330
@@ -24373,7 +24229,7 @@ AcDbDictionary
   3
 _CurrQry
 350
-1298
+127E
   0
 DICTIONARY
   5
@@ -25889,563 +25745,563 @@ AcDbDictionary
   3
 *A10
 350
-537
+588
   3
 *A100
 350
-428
+51A
   3
 *A101
 350
-4D4
+51C
   3
 *A102
 350
-4D6
+51E
   3
 *A103
 350
-4EA
+535
   3
 *A104
 350
-5BC
+4FD
   3
 *A105
 350
-578
+405
   3
 *A106
 350
-4D8
+520
   3
 *A107
 350
-4ED
+537
   3
 *A108
 350
-5A0
+4DE
   3
 *A109
 350
-549
+59C
   3
 *A11
 350
-4DE
+526
   3
 *A110
 350
-4EF
+539
   3
 *A111
 350
-557
+5AA
   3
 *A112
 350
-4F1
+53B
   3
 *A113
 350
-553
+5A6
   3
 *A114
 350
-4F3
+53D
   3
 *A115
 350
-4F5
+53F
   3
 *A116
 350
-5BE
+4FF
   3
 *A117
 350
-530
+580
   3
 *A118
 350
-401
+541
   3
 *A119
 350
-4F7
+543
   3
 *A12
 350
-59C
+4DA
   3
 *A120
 350
-56E
+5C2
   3
 *A121
 350
-4F9
+545
   3
 *A122
 350
-4FB
+547
   3
 *A123
 350
-408
+584
   3
 *A124
 350
-50B
+559
   3
 *A125
 350
-5A2
+4E0
   3
 *A126
 350
-57C
+40A
   3
 *A127
 350
-582
+410
   3
 *A128
 350
-5C0
+501
   3
 *A129
 350
-50D
+55B
   3
 *A13
 350
-526
+576
   3
 *A130
 350
-57E
+40C
   3
 *A131
 350
-570
+5C8
   3
 *A132
 350
-50F
+55D
   3
 *A133
 350
-511
+55F
   3
 *A134
 350
-555
+5A8
   3
 *A135
 350
-4DC
+524
   3
 *A136
 350
-513
+561
   3
 *A137
 350
-516
+563
   3
 *A138
 350
-518
+565
   3
 *A139
 350
-3FF
+52A
   3
 *A14
 350
-539
+58A
   3
 *A140
 350
-416
+503
   3
 *A141
 350
-5A4
+4E2
   3
 *A15
 350
-5AA
+4E8
   3
 *A16
 350
-53B
+58C
   3
 *A17
 350
-5A6
+4E4
   3
 *A18
 350
-53D
+58E
   3
 *A19
 350
-53F
+590
   3
 *A2
 350
-588
+418
   3
 *A20
 350
-4FF
+54B
   3
 *A21
 350
-580
+40E
   3
 *A22
 350
-541
+592
   3
 *A23
 350
-543
+594
   3
 *A24
 350
-4DA
+522
   3
 *A25
 350
-5C2
+505
   3
 *A26
 350
-545
+596
   3
 *A27
 350
-547
+598
   3
 *A28
 350
-584
+412
   3
 *A29
 350
-559
+5AC
   3
 *A3
 350
-51A
+568
   3
 *A30
 350
-4E0
+528
   3
 *A31
 350
-40A
+59A
   3
 *A32
 350
-410
+414
   3
 *A33
 350
-501
+54D
   3
 *A34
 350
-55B
+5AE
   3
 *A35
 350
-576
+403
   3
 *A36
 350
-40C
+5B0
   3
 *A37
 350
-5C8
+507
   3
 *A38
 350
-55D
+5B2
   3
 *A39
 350
-55F
+5B4
   3
 *A4
 350
-51C
+56A
   3
 *A40
 350
-5A8
+4E6
   3
 *A41
 350
-524
+574
   3
 *A42
 350
-561
+5B6
   3
 *A43
 350
-563
+5B8
   3
 *A44
 350
-565
+5BA
   3
 *A45
 350
-52A
+57A
   3
 *A46
 350
-58A
+41C
   3
 *A47
 350
-503
+54F
   3
 *A48
 350
-4E2
+52C
   3
 *A49
 350
-4E8
+533
   3
 *A5
 350
-51E
+56C
   3
 *A50
 350
-58C
+41E
   3
 *A51
 350
-4E4
+52E
   3
 *A52
 350
-58E
+420
   3
 *A53
 350
-590
+422
   3
 *A54
 350
-418
+509
   3
 *A55
 350
-54B
+59E
   3
 *A56
 350
-40E
+3FD
   3
 *A57
 350
-592
+424
   3
 *A58
 350
-594
+426
   3
 *A59
 350
-522
+572
   3
 *A6
 350
-535
+586
   3
 *A60
 350
-505
+551
   3
 *A61
 350
-596
+428
   3
 *A62
 350
-598
+4D4
   3
 *A63
 350
-412
+4D6
   3
 *A64
 350
-5AC
+4EA
   3
 *A65
 350
-568
+5BC
   3
 *A66
 350
-528
+578
   3
 *A67
 350
-59A
+4D8
   3
 *A68
 350
-414
+4ED
   3
 *A69
 350
-54D
+5A0
   3
 *A7
 350
-4FD
+549
   3
 *A70
 350
-5AE
+4EF
   3
 *A71
 350
-403
+557
   3
 *A72
 350
-5B0
+4F1
   3
 *A73
 350
-507
+553
   3
 *A74
 350
-5B2
+4F3
   3
 *A75
 350
-5B4
+4F5
   3
 *A76
 350
-56A
+5BE
   3
 *A77
 350
-4E6
+530
   3
 *A78
 350
-574
+401
   3
 *A79
 350
-5B6
+4F7
   3
 *A8
 350
-405
+56E
   3
 *A80
 350
-5B8
+4F9
   3
 *A81
 350
-5BA
+4FB
   3
 *A82
 350
-57A
+408
   3
 *A83
 350
-41C
+50B
   3
 *A84
 350
-54F
+5A2
   3
 *A85
 350
-52C
+57C
   3
 *A86
 350
-533
+582
   3
 *A87
 350
-56C
+5C0
   3
 *A88
 350
-41E
+50D
   3
 *A89
 350
-52E
+57E
   3
 *A9
 350
-520
+570
   3
 *A90
 350
-420
+50F
   3
 *A91
 350
-422
+511
   3
 *A92
 350
-509
+555
   3
 *A93
 350
-59E
+4DC
   3
 *A94
 350
-3FD
+513
   3
 *A95
 350
-424
+516
   3
 *A96
 350
-426
+518
   3
 *A97
 350
-572
+3FF
   3
 *A98
 350
-586
+416
   3
 *A99
 350
-551
+5A4
   0
 DICTIONARY
   5
@@ -26501,7 +26357,7 @@ AcDbDictionary
   0
 XRECORD
   5
-1297
+127D
 102
 {ACAD_REACTORS
 330
@@ -26545,7 +26401,7 @@ ASEBlockHierarchyIndexRecord
 1001
 DCO15
 1040
--2146691446.0
+-2137867716.0
   0
 DICTIONARY
   5
@@ -26589,7 +26445,7 @@ MAP_RESOURCE_VERSION_MANAGEMENT_DICTIONARY
 1001
 MapGWS
 1000
-C:\ProgramData\Autodesk\C3D 2025\MapCache\2024_lag_fm-vaGWS1734866554.xml
+C:\ProgramData\Autodesk\C3D 2025\MapCache\2024_lag_fm-VAGWS1743686684.xml
   0
 DICTIONARY
   5
@@ -26618,6 +26474,14 @@ FD8
 02_27_2014-16_53_29
 350
 D6C
+  3
+04_03_2025-13_15_57
+350
+1204
+  3
+04_03_2025-13_15_58
+350
+1212
   3
 04_29_2024-11_19_16
 350
@@ -26670,18 +26534,6 @@ DB9
 12_03_2015-11_10_39
 350
 DF3
-  3
-12_16_2024-12_33_59
-350
-1212
-  3
-12_22_2024-11_22_33
-350
-1291
-  3
-12_22_2024-11_22_34
-350
-1296
   0
 DICTIONARY
   5
@@ -33575,7 +33427,7 @@ TABLESTYLE
 102
 {ACAD_XDICTIONARY
 360
-12A1
+1280
 102
 }
 102
@@ -40439,7 +40291,7 @@ DictionaryVariables
   0
 XRECORD
   5
-1298
+127E
 102
 {ACAD_REACTORS
 330
@@ -40839,6 +40691,66 @@ ACAD-D000:409
   0
 XRECORD
   5
+1204
+102
+{ACAD_REACTORS
+330
+23D
+102
+}
+330
+23D
+100
+AcDbXrecord
+280
+     1
+160
+        1743686157
+ 70
+  1214
+  1
+13.7.765.0
+  1
+C3D_765_20240808_0821
+  1
+Autodesk Civil 3D
+  1
+765_20240808_0821
+  1
+ACAD-8100:409
+  0
+XRECORD
+  5
+1212
+102
+{ACAD_REACTORS
+330
+23D
+102
+}
+330
+23D
+100
+AcDbXrecord
+280
+     1
+160
+        1743686158
+ 70
+  1214
+  1
+13.7.765.0
+  1
+C3D_765_20240808_0821
+  1
+Autodesk Civil 3D
+  1
+765_20240808_0821
+  1
+ACAD-8100:409
+  0
+XRECORD
+  5
 103F
 102
 {ACAD_REACTORS
@@ -41227,96 +41139,6 @@ AutoCAD Civil 3D
   1
 ACAD-F000:409
   0
-XRECORD
-  5
-1212
-102
-{ACAD_REACTORS
-330
-23D
-102
-}
-330
-23D
-100
-AcDbXrecord
-280
-     1
-160
-        1734352439
- 70
-  1214
-  1
-13.7.765.0
-  1
-C3D_765_20240808_0821
-  1
-Autodesk Civil 3D
-  1
-765_20240808_0821
-  1
-ACAD-8100:409
-  0
-XRECORD
-  5
-1291
-102
-{ACAD_REACTORS
-330
-23D
-102
-}
-330
-23D
-100
-AcDbXrecord
-280
-     1
-160
-        1734866553
- 70
-  1214
-  1
-13.7.765.0
-  1
-C3D_765_20240808_0821
-  1
-Autodesk Civil 3D
-  1
-765_20240808_0821
-  1
-ACAD-8100:409
-  0
-XRECORD
-  5
-1296
-102
-{ACAD_REACTORS
-330
-23D
-102
-}
-330
-23D
-100
-AcDbXrecord
-280
-     1
-160
-        1734866554
- 70
-  1214
-  1
-13.7.765.0
-  1
-C3D_765_20240808_0821
-  1
-Autodesk Civil 3D
-  1
-765_20240808_0821
-  1
-ACAD-8100:409
-  0
 DICTIONARY
   5
 205
@@ -41328,6 +41150,10 @@ AcDbDictionary
      1
 281
      1
+  3
+AcPublish_PlotSettingsOverride
+360
+127C
   0
 DICTIONARY
   5
@@ -41439,7 +41265,7 @@ AcDbXrecord
   0
 DICTIONARY
   5
-12A1
+1280
 330
 5EE
 100
@@ -41451,7 +41277,7 @@ AcDbDictionary
   3
 ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
 360
-12A2
+1281
   0
 DICTIONARY
   5
@@ -41467,7 +41293,7 @@ AcDbDictionary
   3
 ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
 360
-12A0
+127F
   0
 DMMAP
   5
@@ -41543,7 +41369,7 @@ Legend
 360
 5F0
  40
-123235.4689332395
+70222.96979730288
 290
      0
 290
@@ -41557,13 +41383,13 @@ Legend
 290
      1
  40
--17985.6793365473
+-18039.98530111964
  40
--10487.8342962579
+-10487.85974814546
  40
-29027.72505690061
+29082.03102147295
  40
-11064.7655173643
+11064.79096925186
   1
 
 290
@@ -41591,6 +41417,92 @@ AcMapDMStyleCategory
   1
 Display Styles
  70
+     0
+  0
+PLOTSETTINGS
+  5
+127C
+102
+{ACAD_REACTORS
+330
+205
+102
+}
+330
+205
+100
+AcDbPlotSettings
+  1
+
+  2
+none_device
+  4
+ISO_A4_(210.00_x_297.00_MM)
+  6
+
+ 40
+7.5
+ 41
+20.0
+ 42
+7.5
+ 43
+20.0
+ 44
+210.0
+ 45
+297.0
+ 46
+11.54999923706054
+ 47
+-13.65000009536743
+ 48
+0.0
+ 49
+0.0
+140
+0.0
+141
+0.0
+142
+1.0
+143
+241.6513657568851
+ 70
+ 11952
+ 72
+     1
+ 73
+     0
+ 74
+     0
+  7
+
+ 75
+     0
+147
+0.0041381930404898
+ 76
+     0
+ 77
+     2
+ 78
+   300
+148
+18039.98530111964
+149
+10487.85974814546
+1001
+ACAD_PSEXT
+1000
+None
+1000
+None
+1000
+Not applicable
+1000
+The layout will not be plotted unless a new plotter configuration name is selected.
+1070
      0
   0
 XRECORD
@@ -42011,15 +41923,15 @@ AcDbXrecord
   0
 CELLSTYLEMAP
   5
-12A2
+1281
 102
 {ACAD_REACTORS
 330
-12A1
+1280
 102
 }
 330
-12A1
+1280
 100
 AcDbCellStyleMap
  90
@@ -42657,7 +42569,7 @@ CELLSTYLE_END
   0
 CELLSTYLEMAP
   5
-12A0
+127F
 102
 {ACAD_REACTORS
 330
@@ -43603,7 +43515,7 @@ Thumbnail_Data
  94
       891
 310
-89504E470D0A1A0A0000000D49484452000001000000004208030000008F4BF88700000300504C5445212830FFFFFF2128300000000000000000000000000000000000000000000000000000330000660000990000CC0000FF0033000033330033660033990033CC0033FF0066000066330066660066990066CC0066FF0099
+89504E470D0A1A0A0000000D49484452000001000000007508030000009634CF9200000300504C5445212830FFFFFF2128300000000000000000000000000000000000000000000000000000330000660000990000CC0000FF0033000033330033660033990033CC0033FF0066000066330066660066990066CC0066FF0099
 310
 000099330099660099990099CC0099FF00CC0000CC3300CC6600CC9900CCCC00CCFF00FF0000FF3300FF6600FF9900FFCC00FFFF3300003300333300663300993300CC3300FF3333003333333333663333993333CC3333FF3366003366333366663366993366CC3366FF3399003399333399663399993399CC3399FF33CC00
 310
@@ -43615,7 +43527,7 @@ FF3366FF6666FF9966FFCC66FFFF9900009900339900669900999900CC9900FF9933009933339933
 310
 FF3366FF3399FF33CCFF33FFFF6600FF6633FF6666FF6699FF66CCFF66FFFF9900FF9933FF9966FF9999FF99CCFF99FFFFCC00FFCC33FFCC66FFCC99FFCCCCFFCCFFFFFF00FFFF33FFFF66FFFF99FFFFCCFFFFFF0000000D0D0D1A1A1A2828283535354343435050505D5D5D6B6B6B787878868686939393A1A1A1AEAEAEBB
 310
-BBBBC9C9C9D6D6D6E4E4E4F1F1F1FFFFFF0000000000000000000000000000000000000000000000000000000000002E4550F1000000274944415478DAEDC1010D000000C2A0F74F6D0E37A000000000000000000000000000000000F8364242000108C669040000000049454E44AE426082492A2E0000000049454E44AE42
+BBBBC9C9C9D6D6D6E4E4E4F1F1F1FFFFFF0000000000000000000000000000000000000000000000000000000000002E4550F1000000344944415478DAEDC13101000000C2A0F54F6D0D0FA000000000000000000000000000000000000000000000000000000000008E0C757500019AC925960000000049454E44AE426082
 310
 6082
   0
