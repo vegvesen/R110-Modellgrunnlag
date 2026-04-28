@@ -493,27 +493,27 @@ $SKPOLY
   9
 $TDCREATE
  40
-2461147.467870371
+2461147.469085648
   9
 $TDUCREATE
  40
-2461147.384537037
+2461147.385752315
   9
 $TDUPDATE
  40
-2461147.533356482
+2461147.533067130
   9
 $TDUUPDATE
  40
-2461147.450023148
+2461147.449733796
   9
 $TDINDWG
  40
-0.0016666667
+0.0012268519
   9
 $TDUSRTIMER
  40
-0.0016666667
+0.0012268519
   9
 $USRTIMER
  70
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-12A2
+12BE
   9
 $SURFTAB1
  70
@@ -933,11 +933,11 @@ $PSTYLEMODE
   9
 $FINGERPRINTGUID
   2
-{E186DE7E-9E25-6C43-B42D-939FB51B625F}
+{841D7D04-D4DE-184D-9C07-405A9B00A8F0}
   9
 $VERSIONGUID
   2
-{2EC3134F-9104-5A40-841C-A0BC1EE7274D}
+{E2F14B74-8C15-FD45-94C1-6F8570924609}
   9
 $EXTNAMES
 290
@@ -10793,7 +10793,7 @@ AcDbViewportTableRecord
  37
 0.0
  40
-3858.094256207337
+3857.734953516351
  41
 2.25552608311229
  42
@@ -10999,7 +10999,7 @@ LAYER
 100
 AcDbSymbolTable
  70
-    20
+    48
   0
 LAYER
   5
@@ -11043,11 +11043,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Sideforankring
+blomst
  70
      0
  62
-    50
+     7
   6
 Continuous
 370
@@ -11063,7 +11063,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_Rekkverkende_
+Vegetasjon_beplantning_solitær_blomster
   0
 LAYER
   5
@@ -11075,11 +11075,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-SideforankringFjellskjæring
+busk
  70
      0
  62
-    50
+     7
   6
 Continuous
 370
@@ -11095,7 +11095,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_Rekkverkende_
+Vegetasjon_beplantning_solitær_busker
   0
 LAYER
   5
@@ -11107,11 +11107,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-SideforankringJordskjæring
+gress
  70
      0
  62
-    50
+     7
   6
 Continuous
 370
@@ -11127,7 +11127,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_Rekkverkende_
+Vegetasjon_beplantning_solitær_gress
   0
 LAYER
   5
@@ -11139,11 +11139,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-SideforankringMur
+staude
  70
      0
  62
-    50
+     7
   6
 Continuous
 370
@@ -11159,7 +11159,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_Rekkverkende_
+Vegetasjon_beplantning_solitær_stauder
   0
 LAYER
   5
@@ -11171,11 +11171,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-SideforankringTunnelportal
+tre
  70
      0
  62
-    50
+     7
   6
 Continuous
 370
@@ -11191,7 +11191,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_Rekkverkende_
+Vegetasjon_beplantning_solitær_trær
   0
 LAYER
   5
@@ -11203,11 +11203,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-SideforankringNabo
+bed
  70
      0
  62
-    50
+     7
   6
 Continuous
 370
@@ -11223,7 +11223,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_Rekkverkende_
+Vegetasjon_beplantning_plantefelt_bed
   0
 LAYER
   5
@@ -11235,7 +11235,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Ettergivende
+regnbed
  70
      0
  62
@@ -11255,7 +11255,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_Rekkverkende_
+Vegetasjon_beplantning_plantefelt_regnbed
   0
 LAYER
   5
@@ -11267,11 +11267,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-NedføringUtenUtsvingning
+blomster
  70
      0
  62
-   140
+     7
   6
 Continuous
 370
@@ -11287,7 +11287,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_Rekkverkende_
+Vegetasjon_beplantning_plantefelt_blomster
   0
 LAYER
   5
@@ -11299,11 +11299,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-NedføringMedUtsvingning
+busker
  70
      0
  62
-   140
+     7
   6
 Continuous
 370
@@ -11319,7 +11319,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_Rekkverkende_
+Vegetasjon_beplantning_plantefelt_busker
   0
 LAYER
   5
@@ -11331,11 +11331,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-AvslutningFullHøydeUtenUtsvingning
+prydgress
  70
      0
  62
-   160
+     7
   6
 Continuous
 370
@@ -11351,7 +11351,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_Rekkverkende_
+Vegetasjon_beplantning_plantefelt_prydgress
   0
 LAYER
   5
@@ -11363,11 +11363,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-AvslutningFullHøydeMedUtsvingning
+hekk
  70
      0
  62
-   160
+     7
   6
 Continuous
 370
@@ -11383,7 +11383,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_Rekkverkende_
+Vegetasjon_beplantning_plantefelt_hekk
   0
 LAYER
   5
@@ -11395,11 +11395,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-AvsluttetUtenforSikkerhetssone
+stauder
  70
      0
  62
-   160
+     7
   6
 Continuous
 370
@@ -11415,7 +11415,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_Rekkverkende_
+Vegetasjon_beplantning_plantefelt_stauder
   0
 LAYER
   5
@@ -11427,11 +11427,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-AvsluttetIAnnetVegobjekt
+trær
  70
      0
  62
-   160
+     7
   6
 Continuous
 370
@@ -11447,7 +11447,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_Rekkverkende_
+Vegetasjon_beplantning_plantefelt_trær
   0
 LAYER
   5
@@ -11459,11 +11459,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Betong
+leplanting
  70
      0
  62
-   252
+     7
   6
 Continuous
 370
@@ -11479,7 +11479,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_
+Vegetasjon_beplantning_plantefelt_leplanting
   0
 LAYER
   5
@@ -11491,7 +11491,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Håndlist
+masseplanter
  70
      0
  62
@@ -11511,7 +11511,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_
+Vegetasjon_beplantning_plantefelt_masseplanter
   0
 LAYER
   5
@@ -11523,7 +11523,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Skinne
+plantefelt1
  70
      0
  62
@@ -11543,7 +11543,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_
+Vegetasjon_beplantning_plantefelt_1
   0
 LAYER
   5
@@ -11555,7 +11555,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Stolpe
+plantefelt2
  70
      0
  62
@@ -11575,7 +11575,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_
+Vegetasjon_beplantning_plantefelt_2
   0
 LAYER
   5
@@ -11587,11 +11587,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Overgang
+plantefelt3
  70
      0
  62
-    90
+     7
   6
 Continuous
 370
@@ -11607,7 +11607,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_
+Vegetasjon_beplantning_plantefelt_3
   0
 LAYER
   5
@@ -11619,11 +11619,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-TypegodkjentStøtpute
+gressplen
  70
      0
  62
-   160
+     7
   6
 Continuous
 370
@@ -11639,7 +11639,903 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_Støtpute_
+Vegetasjon_beplantning_gress_
+  0
+LAYER
+  5
+127A
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+gressbakke
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Vegetasjon_beplantning_gress_
+  0
+LAYER
+  5
+127B
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+blomstereng
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Vegetasjon_beplantning_gress_
+  0
+LAYER
+  5
+127C
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+natureng
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Vegetasjon_beplantning_gress_
+  0
+LAYER
+  5
+127D
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+løsing-av-jord
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Vegetasjon_jordarbeid_
+  0
+LAYER
+  5
+127E
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+arronderes
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Vegetasjon_jordarbeid_
+  0
+LAYER
+  5
+127F
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+gjødsles
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Vegetasjon_jordarbeid_
+  0
+LAYER
+  5
+1280
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+jordlag
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Vegetasjon_jordarbeid_
+  0
+LAYER
+  5
+1281
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+matjord
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Vegetasjon_jordarbeid_
+  0
+LAYER
+  5
+1282
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+vegetasjonsdekke
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Vegetasjon_jordarbeid_
+  0
+LAYER
+  5
+1283
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+jordprøver
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Vegetasjon_jordarbeid_
+  0
+LAYER
+  5
+1284
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+jordforbedring
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Vegetasjon_jordarbeid_
+  0
+LAYER
+  5
+1285
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+erosjonssikring
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Vegetasjon_jordarbeid_
+  0
+LAYER
+  5
+1286
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+geotekstil
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Vegetasjon_jordarbeid_
+  0
+LAYER
+  5
+1287
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+fiberduk
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Vegetasjon_jordarbeid_
+  0
+LAYER
+  5
+1288
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+plantegrop
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Vegetasjon_jordarbeid_
+  0
+LAYER
+  5
+1289
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+drenering
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Vegetasjon_jordarbeid_
+  0
+LAYER
+  5
+128A
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+rotvennlig-forsterkningslag
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Vegetasjon_jordarbeid_
+  0
+LAYER
+  5
+128B
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+bark
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Vegetasjon_jordarbeid_dekkemateriale_
+  0
+LAYER
+  5
+128C
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+kompost
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Vegetasjon_jordarbeid_dekkemateriale_
+  0
+LAYER
+  5
+128D
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+halm
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Vegetasjon_jordarbeid_dekkemateriale_
+  0
+LAYER
+  5
+128E
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+lin
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Vegetasjon_jordarbeid_dekkemateriale_
+  0
+LAYER
+  5
+128F
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+dryppvanning
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Vegetasjon_vanning_
+  0
+LAYER
+  5
+1290
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+spreder
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Vegetasjon_vanning_
+  0
+LAYER
+  5
+1291
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+manuell
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Vegetasjon_vanning_
+  0
+LAYER
+  5
+1292
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+kompostbinge
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Vegetasjon_utstyr
+  0
+LAYER
+  5
+1293
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+beskyttelse
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Vegetasjon_utstyr_
+  0
+LAYER
+  5
+1294
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+oppstøtting
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Vegetasjon_utstyr_
+  0
+LAYER
+  5
+1295
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+plantekasse
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Vegetasjon_utstyr_
   0
 ENDTAB
   0
@@ -16435,7 +17331,7 @@ EF
   3
 ACDB_RECOMPOSE_DATA
 350
-12A1
+12BD
   3
 AcDbVariableDictionary
 350
@@ -16475,11 +17371,11 @@ E60
   3
 AECC_LASTSAVED_APPVERSION
 350
-129C
+12B8
   3
 ASE_INDEX_DICTIONARY
 350
-127C
+1298
   3
 Autodesk_MAP
 350
@@ -17227,7 +18123,7 @@ X-Ray
   0
 XRECORD
   5
-12A1
+12BD
 102
 {ACAD_REACTORS
 330
@@ -17321,7 +18217,7 @@ AcDbDictionary
   3
 _CurrQry
 350
-129D
+12B9
   0
 DICTIONARY
   5
@@ -19613,7 +20509,7 @@ AcDbDictionary
   0
 XRECORD
   5
-129C
+12B8
 102
 {ACAD_REACTORS
 330
@@ -19637,7 +20533,7 @@ AcDbXrecord
   0
 DICTIONARY
   5
-127C
+1298
 102
 {ACAD_REACTORS
 330
@@ -19653,11 +20549,11 @@ AcDbDictionary
   3
 ASEBlockHierarchyIndexRecord
 350
-127D
+1299
 1001
 DCO15
 1040
--2105217918.0
+-2105217943.0
   0
 DICTIONARY
   5
@@ -19701,7 +20597,7 @@ MAP_RESOURCE_VERSION_MANAGEMENT_DICTIONARY
 1001
 MapGWS
 1000
-C:\ProgramData\Autodesk\C3D 2026\MapCache\fm-rekkverkGWS1776336482.xml
+C:\ProgramData\Autodesk\C3D 2026\MapCache\fm-vegetasjonGWS1776336457.xml
   0
 DICTIONARY
   5
@@ -19731,17 +20627,13 @@ D6C
 350
 1186
   3
-04_16_2026-09_13_44
-350
-1239
-  3
-04_16_2026-09_13_45
+04_16_2026-09_15_30
 350
 125E
   3
-04_16_2026-10_47_14
+04_16_2026-10_47_19
 350
-129B
+12B7
   3
 05_13_2025-06_00_25
 350
@@ -21701,7 +22593,7 @@ TABLESTYLE
 102
 {ACAD_XDICTIONARY
 360
-129F
+12BB
 102
 }
 102
@@ -28565,7 +29457,7 @@ DictionaryVariables
   0
 XRECORD
   5
-129D
+12B9
 102
 {ACAD_REACTORS
 330
@@ -28601,15 +29493,15 @@ ADE02C001
   0
 XRECORD
   5
-127D
+1299
 102
 {ACAD_REACTORS
 330
-127C
+1298
 102
 }
 330
-127C
+1298
 100
 AcDbXrecord
 280
@@ -28965,36 +29857,6 @@ ACAD-9100:409
   0
 XRECORD
   5
-1239
-102
-{ACAD_REACTORS
-330
-23D
-102
-}
-330
-23D
-100
-AcDbXrecord
-280
-     1
-160
-        1776330824
- 70
-  1214
-  1
-13.8.1704.0
-  1
-C3D_1704_20260318_0231
-  1
-Autodesk Civil 3D
-  1
-1704_20260318_0231
-  1
-ACAD-9100:409
-  0
-XRECORD
-  5
 125E
 102
 {ACAD_REACTORS
@@ -29009,7 +29871,7 @@ AcDbXrecord
 280
      1
 160
-        1776330825
+        1776330930
  70
   1214
   1
@@ -29025,7 +29887,7 @@ ACAD-9100:409
   0
 XRECORD
   5
-129B
+12B7
 102
 {ACAD_REACTORS
 330
@@ -29039,7 +29901,7 @@ AcDbXrecord
 280
      1
 160
-        1776336434
+        1776336439
  70
   1214
   1
@@ -29551,7 +30413,7 @@ REFLECTIONTILE
   0
 DICTIONARY
   5
-129F
+12BB
 330
 5EE
 100
@@ -29563,7 +30425,7 @@ AcDbDictionary
   3
 ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
 360
-12A0
+12BC
   0
 DICTIONARY
   5
@@ -29579,7 +30441,7 @@ AcDbDictionary
   3
 ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
 360
-129E
+12BA
   0
 DMMAP
   5
@@ -29655,7 +30517,7 @@ Legend
 360
 5F0
  40
-12880.54835912606
+12880.22577062302
 290
      0
 290
@@ -29669,13 +30531,13 @@ Legend
 290
      1
  40
--840.8294394129466
+-840.4242311173206
  40
--436.6190213443446
+-436.4393699988518
  40
-7861.202786568412
+7860.797578272786
  40
-3421.475234862992
+3421.295583517499
   1
 
 290
@@ -30123,15 +30985,15 @@ AcDbXrecord
   0
 CELLSTYLEMAP
   5
-12A0
+12BC
 102
 {ACAD_REACTORS
 330
-129F
+12BB
 102
 }
 330
-129F
+12BB
 100
 AcDbCellStyleMap
  90
@@ -30769,7 +31631,7 @@ CELLSTYLE_END
   0
 CELLSTYLEMAP
   5
-129E
+12BA
 102
 {ACAD_REACTORS
 330

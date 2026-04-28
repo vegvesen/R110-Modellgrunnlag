@@ -493,27 +493,27 @@ $SKPOLY
   9
 $TDCREATE
  40
-2461147.467870371
+2461147.470104167
   9
 $TDUCREATE
  40
-2461147.384537037
+2461147.386770834
   9
 $TDUPDATE
  40
-2461147.533356482
+2461147.533229167
   9
 $TDUUPDATE
  40
-2461147.450023148
+2461147.449895833
   9
 $TDINDWG
  40
-0.0016666667
+0.0010763889
   9
 $TDUSRTIMER
  40
-0.0016666667
+0.0010763889
   9
 $USRTIMER
  70
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-12A2
+12AE
   9
 $SURFTAB1
  70
@@ -933,11 +933,11 @@ $PSTYLEMODE
   9
 $FINGERPRINTGUID
   2
-{E186DE7E-9E25-6C43-B42D-939FB51B625F}
+{59AC60D5-01EF-1A48-8C6A-C827EFE43B2E}
   9
 $VERSIONGUID
   2
-{2EC3134F-9104-5A40-841C-A0BC1EE7274D}
+{6223828D-2ED9-8243-A95A-A4E25A9ED9F0}
   9
 $EXTNAMES
 290
@@ -10793,7 +10793,7 @@ AcDbViewportTableRecord
  37
 0.0
  40
-3858.094256207337
+3858.076567362694
  41
 2.25552608311229
  42
@@ -10999,7 +10999,7 @@ LAYER
 100
 AcDbSymbolTable
  70
-    20
+    32
   0
 LAYER
   5
@@ -11043,11 +11043,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Sideforankring
+BeregnetLinje
  70
      0
  62
-    50
+     7
   6
 Continuous
 370
@@ -11063,7 +11063,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_Rekkverkende_
+Prosjektering__
   0
 LAYER
   5
@@ -11075,11 +11075,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-SideforankringFjellskjæring
+BeregnetLinjeNavn
  70
      0
  62
-    50
+     7
   6
 Continuous
 370
@@ -11095,7 +11095,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_Rekkverkende_
+Prosjektering__
   0
 LAYER
   5
@@ -11107,11 +11107,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-SideforankringJordskjæring
+BeregnetLinjeTabell
  70
      0
  62
-    50
+     7
   6
 Continuous
 370
@@ -11127,7 +11127,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_Rekkverkende_
+Prosjektering__
   0
 LAYER
   5
@@ -11139,11 +11139,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-SideforankringMur
+Hjelpelinjer_1
  70
      0
  62
-    50
+     7
   6
 Continuous
 370
@@ -11159,7 +11159,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_Rekkverkende_
+Prosjektering_
   0
 LAYER
   5
@@ -11171,11 +11171,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-SideforankringTunnelportal
+Hjelpelinjer_2
  70
      0
  62
-    50
+     7
   6
 Continuous
 370
@@ -11191,7 +11191,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_Rekkverkende_
+Prosjektering_
   0
 LAYER
   5
@@ -11203,11 +11203,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-SideforankringNabo
+Hjelpelinjer_3
  70
      0
  62
-    50
+     7
   6
 Continuous
 370
@@ -11223,7 +11223,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_Rekkverkende_
+Prosjektering_
   0
 LAYER
   5
@@ -11235,7 +11235,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Ettergivende
+Hjelpelinjer_4
  70
      0
  62
@@ -11255,7 +11255,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_Rekkverkende_
+Prosjektering_
   0
 LAYER
   5
@@ -11267,11 +11267,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-NedføringUtenUtsvingning
+Hjelpelinjer_5
  70
      0
  62
-   140
+     7
   6
 Continuous
 370
@@ -11287,7 +11287,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_Rekkverkende_
+Prosjektering_
   0
 LAYER
   5
@@ -11299,11 +11299,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-NedføringMedUtsvingning
+XREF_1
  70
      0
  62
-   140
+     7
   6
 Continuous
 370
@@ -11319,7 +11319,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_Rekkverkende_
+Prosjektering_
   0
 LAYER
   5
@@ -11331,11 +11331,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-AvslutningFullHøydeUtenUtsvingning
+XREF_2
  70
      0
  62
-   160
+     7
   6
 Continuous
 370
@@ -11351,7 +11351,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_Rekkverkende_
+Prosjektering_
   0
 LAYER
   5
@@ -11363,11 +11363,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-AvslutningFullHøydeMedUtsvingning
+XREF_3
  70
      0
  62
-   160
+     7
   6
 Continuous
 370
@@ -11383,7 +11383,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_Rekkverkende_
+Prosjektering_
   0
 LAYER
   5
@@ -11395,11 +11395,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-AvsluttetUtenforSikkerhetssone
+XREF_4
  70
      0
  62
-   160
+     7
   6
 Continuous
 370
@@ -11415,7 +11415,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_Rekkverkende_
+Prosjektering_
   0
 LAYER
   5
@@ -11427,11 +11427,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-AvsluttetIAnnetVegobjekt
+XREF_5
  70
      0
  62
-   160
+     7
   6
 Continuous
 370
@@ -11447,7 +11447,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_Rekkverkende_
+Prosjektering_
   0
 LAYER
   5
@@ -11459,11 +11459,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Betong
+Eksisterende_1
  70
      0
  62
-   252
+     7
   6
 Continuous
 370
@@ -11479,7 +11479,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_
+Prosjektering_
   0
 LAYER
   5
@@ -11491,7 +11491,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Håndlist
+Eksisterende_2
  70
      0
  62
@@ -11511,7 +11511,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_
+Prosjektering_
   0
 LAYER
   5
@@ -11523,7 +11523,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Skinne
+Eksisterende_3
  70
      0
  62
@@ -11543,7 +11543,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_
+Prosjektering_
   0
 LAYER
   5
@@ -11555,7 +11555,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Stolpe
+Eksisterende_4
  70
      0
  62
@@ -11575,7 +11575,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_
+Prosjektering_
   0
 LAYER
   5
@@ -11587,11 +11587,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Overgang
+Eksisterende_5
  70
      0
  62
-    90
+     7
   6
 Continuous
 370
@@ -11607,7 +11607,7 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_
+Prosjektering_
   0
 LAYER
   5
@@ -11619,11 +11619,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-TypegodkjentStøtpute
+Tekst_1
  70
      0
  62
-   160
+     7
   6
 Continuous
 370
@@ -11639,7 +11639,391 @@ AcAecLayerStandard
 1000
 
 1000
-Rekkverk_Støtpute_
+Prosjektering_
+  0
+LAYER
+  5
+127A
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+Tekst_2
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Prosjektering_
+  0
+LAYER
+  5
+127B
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+Tekst_3
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Prosjektering_
+  0
+LAYER
+  5
+127C
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+Tekst_4
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Prosjektering_
+  0
+LAYER
+  5
+127D
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+Tekst_5
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Prosjektering_
+  0
+LAYER
+  5
+127E
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+Maalsetting_1
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Prosjektering_
+  0
+LAYER
+  5
+127F
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+Maalsetting_2
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Prosjektering_
+  0
+LAYER
+  5
+1280
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+Maalsetting_3
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Prosjektering_
+  0
+LAYER
+  5
+1281
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+Maalsetting_4
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Prosjektering_
+  0
+LAYER
+  5
+1282
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+Maalsetting_5
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Prosjektering_
+  0
+LAYER
+  5
+1283
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+Hatch_1
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Prosjektering_
+  0
+LAYER
+  5
+1284
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+Hatch_2
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Prosjektering_
+  0
+LAYER
+  5
+1285
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+Hatch_3
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    18
+390
+F
+347
+EE
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+Prosjektering_
   0
 ENDTAB
   0
@@ -16435,7 +16819,7 @@ EF
   3
 ACDB_RECOMPOSE_DATA
 350
-12A1
+12AD
   3
 AcDbVariableDictionary
 350
@@ -16475,11 +16859,11 @@ E60
   3
 AECC_LASTSAVED_APPVERSION
 350
-129C
+12A8
   3
 ASE_INDEX_DICTIONARY
 350
-127C
+1288
   3
 Autodesk_MAP
 350
@@ -17227,7 +17611,7 @@ X-Ray
   0
 XRECORD
   5
-12A1
+12AD
 102
 {ACAD_REACTORS
 330
@@ -17321,7 +17705,7 @@ AcDbDictionary
   3
 _CurrQry
 350
-129D
+12A9
   0
 DICTIONARY
   5
@@ -19613,7 +19997,7 @@ AcDbDictionary
   0
 XRECORD
   5
-129C
+12A8
 102
 {ACAD_REACTORS
 330
@@ -19637,7 +20021,7 @@ AcDbXrecord
   0
 DICTIONARY
   5
-127C
+1288
 102
 {ACAD_REACTORS
 330
@@ -19653,11 +20037,11 @@ AcDbDictionary
   3
 ASEBlockHierarchyIndexRecord
 350
-127D
+1289
 1001
 DCO15
 1040
--2105217918.0
+-2105217929.0
   0
 DICTIONARY
   5
@@ -19701,7 +20085,7 @@ MAP_RESOURCE_VERSION_MANAGEMENT_DICTIONARY
 1001
 MapGWS
 1000
-C:\ProgramData\Autodesk\C3D 2026\MapCache\fm-rekkverkGWS1776336482.xml
+C:\ProgramData\Autodesk\C3D 2026\MapCache\fm-prosjekteringGWS1776336471.xml
   0
 DICTIONARY
   5
@@ -19731,17 +20115,13 @@ D6C
 350
 1186
   3
-04_16_2026-09_13_44
-350
-1239
-  3
-04_16_2026-09_13_45
+04_16_2026-09_16_58
 350
 125E
   3
-04_16_2026-10_47_14
+04_16_2026-10_47_16
 350
-129B
+12A7
   3
 05_13_2025-06_00_25
 350
@@ -21701,7 +22081,7 @@ TABLESTYLE
 102
 {ACAD_XDICTIONARY
 360
-129F
+12AB
 102
 }
 102
@@ -28565,7 +28945,7 @@ DictionaryVariables
   0
 XRECORD
   5
-129D
+12A9
 102
 {ACAD_REACTORS
 330
@@ -28601,15 +28981,15 @@ ADE02C001
   0
 XRECORD
   5
-127D
+1289
 102
 {ACAD_REACTORS
 330
-127C
+1288
 102
 }
 330
-127C
+1288
 100
 AcDbXrecord
 280
@@ -28965,36 +29345,6 @@ ACAD-9100:409
   0
 XRECORD
   5
-1239
-102
-{ACAD_REACTORS
-330
-23D
-102
-}
-330
-23D
-100
-AcDbXrecord
-280
-     1
-160
-        1776330824
- 70
-  1214
-  1
-13.8.1704.0
-  1
-C3D_1704_20260318_0231
-  1
-Autodesk Civil 3D
-  1
-1704_20260318_0231
-  1
-ACAD-9100:409
-  0
-XRECORD
-  5
 125E
 102
 {ACAD_REACTORS
@@ -29009,7 +29359,7 @@ AcDbXrecord
 280
      1
 160
-        1776330825
+        1776331018
  70
   1214
   1
@@ -29025,7 +29375,7 @@ ACAD-9100:409
   0
 XRECORD
   5
-129B
+12A7
 102
 {ACAD_REACTORS
 330
@@ -29039,7 +29389,7 @@ AcDbXrecord
 280
      1
 160
-        1776336434
+        1776336436
  70
   1214
   1
@@ -29551,7 +29901,7 @@ REFLECTIONTILE
   0
 DICTIONARY
   5
-129F
+12AB
 330
 5EE
 100
@@ -29563,7 +29913,7 @@ AcDbDictionary
   3
 ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
 360
-12A0
+12AC
   0
 DICTIONARY
   5
@@ -29579,7 +29929,7 @@ AcDbDictionary
   3
 ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
 360
-129E
+12AA
   0
 DMMAP
   5
@@ -29655,7 +30005,7 @@ Legend
 360
 5F0
  40
-12880.54835912606
+12880.22577062302
 290
      0
 290
@@ -29669,13 +30019,13 @@ Legend
 290
      1
  40
--840.8294394129466
+-840.8094905877101
  40
--436.6190213443446
+-436.6101769220231
  40
-7861.202786568412
+7861.182837743176
  40
-3421.475234862992
+3421.466390440671
   1
 
 290
@@ -30123,15 +30473,15 @@ AcDbXrecord
   0
 CELLSTYLEMAP
   5
-12A0
+12AC
 102
 {ACAD_REACTORS
 330
-129F
+12AB
 102
 }
 330
-129F
+12AB
 100
 AcDbCellStyleMap
  90
@@ -30769,7 +31119,7 @@ CELLSTYLE_END
   0
 CELLSTYLEMAP
   5
-129E
+12AA
 102
 {ACAD_REACTORS
 330
