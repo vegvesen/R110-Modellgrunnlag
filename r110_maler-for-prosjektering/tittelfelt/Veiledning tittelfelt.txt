@@ -1,0 +1,15 @@
+Veiledning tittelfelt
+
+Hvis tittelfeltet åpnes med kommandoen _open, vil blocker med tekst være editerbare med kommandoen _ddatte.
+Hvis tittelfeltet settes inn som block med kommandoen _ddinsert, må kommandoen explode benyttes før teksten blir editerbar. 
+
+For å editere tekst, bruk kommandoen _ddatte, klikk teksten som skal editeres og du får dialogboks for editering av tekstfeltene.
+
+Tekst ligger på ulike lag som kan slås av/på ved behov: 
+Ledetekst: ztit_ms_tekst_felt
+Tekst om godkjenning av konstruksjoner: ztittekst_konstr-godkj
+Editerbar tekst i feltene: ztittekst_ms
+Revisjonslinje A: ztittekst_rev_1
+Revisjonslinje B: ztittekst_rev_2
+
+
